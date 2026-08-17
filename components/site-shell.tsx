@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getCopy, locales, type Locale, type PageSlug } from "@/content";
 import { links } from "@/content/shared";
 
@@ -13,24 +12,24 @@ export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: P
   const suffix = page === "home" ? "" : `/${page}`;
   return (
     <header className="site-header">
-      <Link className="wordmark" href={`/${locale}`} aria-label={`Denis Nadey — ${copy.nav.home}`}>DN<span>—26</span></Link>
+      <a className="wordmark" href={`/${locale}`} aria-label={`Denis Nadey — ${copy.nav.home}`}>DN<span>—26</span></a>
       <nav className="desktop-nav" aria-label={copy.common.menu}>
-        {navPages.map((slug) => <Link key={slug} href={`/${locale}/${slug}`} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug]}</Link>)}
+        {navPages.map((slug) => <a key={slug} href={`/${locale}/${slug}`} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug]}</a>)}
       </nav>
       <div className="header-actions">
         <details className="language-menu">
           <summary aria-label={copy.common.language}>{locale.toUpperCase()}</summary>
           <div className="language-panel">
-            {locales.map((candidate) => <Link key={candidate} href={`/${candidate}${suffix}`} hrefLang={candidate} aria-current={candidate === locale ? "page" : undefined}>{getCopy(candidate).localeName}</Link>)}
+            {locales.map((candidate) => <a key={candidate} href={`/${candidate}${suffix}`} hrefLang={candidate} aria-current={candidate === locale ? "page" : undefined}>{getCopy(candidate).localeName}</a>)}
           </div>
         </details>
-        <Link className="header-contact" href={`/${locale}/contact`}>{copy.common.contactDenis}<span aria-hidden="true">↗</span></Link>
+        <a className="header-contact" href={`/${locale}/contact`}>{copy.common.contactDenis}<span aria-hidden="true">↗</span></a>
         <details className="mobile-menu">
           <summary>{copy.common.menu}</summary>
           <nav aria-label={copy.common.menu}>
             {["home", ...navPages, "contact"].map((slug) => {
               const href = slug === "home" ? `/${locale}` : `/${locale}/${slug}`;
-              return <Link key={slug} href={href} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug as PageSlug | "home"]}</Link>;
+              return <a key={slug} href={href} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug as PageSlug | "home"]}</a>;
             })}
           </nav>
         </details>
@@ -45,10 +44,10 @@ export function SiteFooter({ locale }: { locale: Locale }) {
     <footer className="site-footer">
       <div><span className="wordmark">DN<span>—26</span></span><p>{copy.common.role}<br />{copy.common.location}</p></div>
       <nav aria-label={copy.common.menu}>
-        <Link href={`/${locale}/work`}>{copy.nav.work}</Link>
-        <Link href={`/${locale}/services`}>{copy.nav.services}</Link>
-        <Link href={`/${locale}/open-source`}>{copy.nav["open-source"]}</Link>
-        <Link href={`/${locale}/contact`}>{copy.nav.contact}</Link>
+        <a href={`/${locale}/work`}>{copy.nav.work}</a>
+        <a href={`/${locale}/services`}>{copy.nav.services}</a>
+        <a href={`/${locale}/open-source`}>{copy.nav["open-source"]}</a>
+        <a href={`/${locale}/contact`}>{copy.nav.contact}</a>
       </nav>
       <div className="footer-links">
         <a href={links.email}>Email</a>
@@ -67,7 +66,7 @@ export function FinalCta({ locale }: { locale: Locale }) {
     <section className="final-cta">
       <p className="section-label">{copy.nav.contact}</p>
       <h2>{copy.common.finalTitle}</h2>
-      <div><p>{copy.common.finalBody}</p><Link className="button primary" href={`/${locale}/contact`}>{copy.common.discuss}<span aria-hidden="true">↗</span></Link></div>
+      <div><p>{copy.common.finalBody}</p><a className="button primary" href={`/${locale}/contact`}>{copy.common.discuss}<span aria-hidden="true">↗</span></a></div>
     </section>
   );
 }
@@ -75,4 +74,3 @@ export function FinalCta({ locale }: { locale: Locale }) {
 export function PageIntro({ label, title, intro }: { label: string; title: string; intro: string }) {
   return <section className="page-intro"><p className="section-label">{label}</p><h1>{title}</h1><p className="page-lede">{intro}</p></section>;
 }
-
