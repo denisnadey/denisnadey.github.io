@@ -27,7 +27,7 @@ test("renders the English homepage with semantic and SEO essentials", async () =
 });
 
 test("renders every required locale and public page", async () => {
-  const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt"];
+  const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"];
   const pages = ["", "/work", "/open-source", "/services", "/experience", "/about", "/contact"];
   for (const locale of locales) {
     for (const page of pages) {
@@ -42,7 +42,7 @@ test("renders every required locale and public page", async () => {
 });
 
 test("renders representative detail routes with route-specific metadata", async () => {
-  for (const path of ["/en/work", "/de/open-source", "/ru/services", "/fr/contact", "/es/about", "/it/experience", "/pl/work", "/pt/contact"]) {
+  for (const path of ["/en/work", "/de/open-source", "/ru/services", "/fr/contact", "/es/about", "/it/experience", "/pl/work", "/pt/contact", "/ka/about", "/ar/services"]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();
@@ -53,7 +53,7 @@ test("renders representative detail routes with route-specific metadata", async 
 });
 
 test("renders localized package documentation", async () => {
-  for (const path of ["/en/docs", "/ru/docs", "/de/docs", "/fr/docs", "/es/docs", "/it/docs", "/pl/docs", "/pt/docs"]) {
+  for (const path of ["/en/docs", "/ru/docs", "/de/docs", "/fr/docs", "/es/docs", "/it/docs", "/pl/docs", "/pt/docs", "/ka/docs", "/ar/docs"]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();
@@ -62,6 +62,15 @@ test("renders localized package documentation", async () => {
     assert.match(html, /quickjs_engine/i, path);
     assert.match(html, /rel="canonical"[^>]+\/docs/i, path);
   }
+});
+
+test("renders Arabic as RTL and Georgian as LTR", async () => {
+  const arabic = await (await render("/ar")).text();
+  assert.match(arabic, /<html[^>]+lang="ar"[^>]+dir="rtl"/i);
+  assert.match(arabic, /hreflang="ka"/i);
+  const georgian = await (await render("/ka")).text();
+  assert.match(georgian, /<html[^>]+lang="ka"[^>]+dir="ltr"/i);
+  assert.match(georgian, /hreflang="ar"/i);
 });
 
 test("returns a useful not-found response", async () => {

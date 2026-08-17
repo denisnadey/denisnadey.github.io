@@ -1,7 +1,9 @@
 import { de } from "./de";
 import { en } from "./en";
 import { fr } from "./fr";
+import { ka } from "./ka";
 import { ru } from "./ru";
+import { ar } from "./ar";
 import esData from "./es.json";
 import itData from "./it.json";
 import plData from "./pl.json";
@@ -18,6 +20,8 @@ const baseCopyByLocale: Record<Locale, SiteCopy> = {
   it: itData as SiteCopy,
   pl: plData as SiteCopy,
   pt: ptData as SiteCopy,
+  ka,
+  ar,
 };
 
 export function isLocale(value: string): value is Locale {

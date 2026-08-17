@@ -36,11 +36,12 @@ npm test
 
 ## Content and internationalization
 
-Required locales are `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, and `pt`. Public routes live under a locale prefix and preserve the current page in the language switcher. The package documentation hub is available at `/{locale}/docs`.
+Required locales are `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, `pt`, `ka`, and `ar`. Public routes live under a locale prefix and preserve the current page in the language switcher. Arabic renders right-to-left; Georgian and the other locales render left-to-right. The package documentation hub is available at `/{locale}/docs`.
 
 - Hand-edited canonical content: `content/en.ts`
 - Hand-edited Russian, German, and French: `content/ru.ts`, `content/de.ts`, `content/fr.ts`
 - Spanish, Italian, Polish, and Portuguese structured dictionaries: `content/*.json`
+- Georgian and Arabic dictionaries: `content/ka.ts`, `content/ar.ts`
 - Shared URLs: `content/shared.ts`
 - Current Web/Mobile/AI positioning: `content/positioning.ts`
 - Localized runtime documentation: `content/docs.ts`

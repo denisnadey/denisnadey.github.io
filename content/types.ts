@@ -1,4 +1,4 @@
-export const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt"] as const;
+export const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"] as const;
 export type Locale = (typeof locales)[number];
 
 export const pages = ["work", "open-source", "services", "experience", "about", "contact"] as const;
@@ -157,4 +157,3 @@ export type SiteCopy = {
     timelineOptions: string[];
   };
 };
-

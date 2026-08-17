@@ -19,7 +19,7 @@ Voice: concise, grounded, technical, calm, specific. Evidence precedes technolog
 
 ## Information architecture
 
-Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, and `pt`. Dutch is deferred because eight high-quality translations are preferable to nine uneven ones.
+Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, `pt`, `ka`, and `ar`. Arabic uses a first-class RTL layout; Georgian uses script-specific typography. Dutch remains deferred.
 
 - `/{locale}` - executive overview, proof, selected work, services, open source, experience, working model, and final CTA.
 - `/{locale}/work` - attributable case studies framed around context, responsibility, constraints, approach, and outcome.

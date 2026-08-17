@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const docsSource = await readFile(new URL("../content/docs.ts", import.meta.url), "utf8");
+const typedLocaleSources = await Promise.all(["ka", "ar"].map((locale) => readFile(new URL(`../content/${locale}.ts`, import.meta.url), "utf8")));
 
 const locales = ["es", "it", "pl", "pt"];
 
@@ -20,10 +21,18 @@ test("locale dictionaries contain every public content group", async () => {
 });
 
 test("documentation contains every required locale and package", () => {
-  for (const locale of ["en", "ru", "de", "fr", "es", "it", "pl", "pt"]) {
+  for (const locale of ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"]) {
     assert.match(docsSource, new RegExp(`\\n  ${locale}: \\{`), `${locale} docs missing`);
   }
   for (const packageName of ["full_svg_flutter", "woff2", "quickjs_engine"]) {
     assert.match(docsSource, new RegExp(packageName), `${packageName} docs missing`);
+  }
+});
+
+test("Georgian and Arabic dictionaries contain every public content group", () => {
+  for (const [index, locale] of ["ka", "ar"].entries()) {
+    for (const key of ["seo", "nav", "common", "home", "work", "openSource", "services", "experience", "about", "contact"]) {
+      assert.match(typedLocaleSources[index], new RegExp(`\\n  ${key}:`), `${locale} missing ${key}`);
+    }
   }
 });

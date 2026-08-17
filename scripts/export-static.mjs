@@ -10,7 +10,7 @@ workerUrl.searchParams.set("static-export", `${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
 const env = { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } };
 const ctx = { waitUntil() {}, passThroughOnException() {} };
-const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt"];
+const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"];
 const pages = ["work", "open-source", "services", "experience", "about", "contact"];
 
 await rm(output, { recursive: true, force: true });
