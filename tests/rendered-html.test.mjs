@@ -48,7 +48,19 @@ test("renders representative detail routes with route-specific metadata", async 
     const html = await response.text();
     assert.match(html, /<h1[^>]*>/i, path);
     assert.match(html, /rel="canonical"/i, path);
-    assert.doesNotMatch(html, /og\.png/i, `${path} must not inherit the generic social image`);
+    assert.doesNotMatch(html, /og(?:-web-mobile-ai)?\.png/i, `${path} must not inherit the generic social image`);
+  }
+});
+
+test("renders localized package documentation", async () => {
+  for (const path of ["/en/docs", "/ru/docs", "/de/docs", "/fr/docs", "/es/docs", "/it/docs", "/pl/docs", "/pt/docs"]) {
+    const response = await render(path);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, /full_svg_flutter/i, path);
+    assert.match(html, /woff2/i, path);
+    assert.match(html, /quickjs_engine/i, path);
+    assert.match(html, /rel="canonical"[^>]+\/docs/i, path);
   }
 });
 

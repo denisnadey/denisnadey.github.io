@@ -1,6 +1,6 @@
 # Denis Nadey — engineering leadership portfolio
 
-Multilingual professional website for Denis Nadey: Engineering Manager, hands-on mobile engineer, Flutter platform lead, consultant, and creator of `full_svg_flutter`.
+Multilingual professional website for Denis Nadey: Engineering Manager, Web/Mobile/AI product engineer, Flutter platform lead, consultant, and creator of `full_svg_flutter`, `woff2`, and `quickjs_engine`.
 
 The site is evidence-led. Public claims are traced in `CONTENT_RESEARCH.md`; positioning, route design, and search intent are documented in `SITE_STRATEGY.md`.
 
@@ -9,8 +9,9 @@ The site is evidence-led. Public claims are traced in `CONTENT_RESEARCH.md`; pos
 - React 19 and TypeScript in strict mode
 - Vinext / Vite with the Next.js App Router API
 - Cloudflare Worker-compatible output through Sites
-- Server-rendered content with one small client component for the enquiry form
+- Server-rendered content with small client components for the enquiry form and theme preference
 - CSS design system with no runtime UI or animation library
+- Light/dark theme with system detection and local preference
 
 ## Local development
 
@@ -35,12 +36,14 @@ npm test
 
 ## Content and internationalization
 
-Required locales are `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, and `pt`. Public routes live under a locale prefix and preserve the current page in the language switcher.
+Required locales are `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, and `pt`. Public routes live under a locale prefix and preserve the current page in the language switcher. The package documentation hub is available at `/{locale}/docs`.
 
 - Hand-edited canonical content: `content/en.ts`
 - Hand-edited Russian, German, and French: `content/ru.ts`, `content/de.ts`, `content/fr.ts`
 - Spanish, Italian, Polish, and Portuguese structured dictionaries: `content/*.json`
 - Shared URLs: `content/shared.ts`
+- Current Web/Mobile/AI positioning: `content/positioning.ts`
+- Localized runtime documentation: `content/docs.ts`
 - Schema and route lists: `content/types.ts`
 
 Company names, product names, package names, and programming technologies remain untranslated. When changing the English structure, update every locale and run the i18n test.
@@ -59,11 +62,18 @@ The canonical production origin is currently `https://denisnadey.com`. Update me
 
 ## Deployment
 
-The repository is configured for Sites through `.openai/hosting.json` and builds to a Cloudflare Worker-compatible bundle:
+The repository supports two production targets. Sites uses `.openai/hosting.json` and a Cloudflare Worker-compatible bundle:
 
 ```bash
 npm run build
 ```
 
-No D1 database, R2 bucket, CMS, analytics service, cookie banner, or third-party runtime API is required.
+GitHub Pages uses a fully static export and deploys from `main`:
 
+```bash
+npm run export:github
+```
+
+The GitHub Actions workflow publishes `out/` to the public user site, with `denisnadey.com` configured as the canonical domain.
+
+No D1 database, R2 bucket, CMS, analytics service, cookie banner, or third-party runtime API is required.

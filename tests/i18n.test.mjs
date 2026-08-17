@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
+const docsSource = await readFile(new URL("../content/docs.ts", import.meta.url), "utf8");
+
 const locales = ["es", "it", "pl", "pt"];
 
 test("locale dictionaries contain every public content group", async () => {
@@ -17,3 +19,11 @@ test("locale dictionaries contain every public content group", async () => {
   }
 });
 
+test("documentation contains every required locale and package", () => {
+  for (const locale of ["en", "ru", "de", "fr", "es", "it", "pl", "pt"]) {
+    assert.match(docsSource, new RegExp(`\\n  ${locale}: \\{`), `${locale} docs missing`);
+  }
+  for (const packageName of ["full_svg_flutter", "woff2", "quickjs_engine"]) {
+    assert.match(docsSource, new RegExp(packageName), `${packageName} docs missing`);
+  }
+});

@@ -1,22 +1,29 @@
 import { getCopy, locales, type Locale, type PageSlug } from "@/content";
+import { getDocsCopy } from "@/content/docs";
+import { getPositioning } from "@/content/positioning";
 import { links } from "@/content/shared";
+import { ThemeToggle } from "./theme-toggle";
 
-const navPages: PageSlug[] = ["work", "open-source", "services", "experience", "about"];
+type HeaderPage = PageSlug | "home" | "docs";
+const navPages: Array<PageSlug | "docs"> = ["work", "services", "open-source", "docs", "about"];
 
 export function ExternalLink({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) {
   return <a className={className} href={href} target="_blank" rel="noreferrer">{children}<span className="sr-only"> ({getCopy("en").common.external})</span></a>;
 }
 
-export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: PageSlug | "home" }) {
+export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: HeaderPage }) {
   const copy = getCopy(locale);
+  const docs = getDocsCopy(locale);
+  const position = getPositioning(locale);
   const suffix = page === "home" ? "" : `/${page}`;
   return (
     <header className="site-header">
       <a className="wordmark" href={`/${locale}`} aria-label={`Denis Nadey — ${copy.nav.home}`}>DN<span>—26</span></a>
       <nav className="desktop-nav" aria-label={copy.common.menu}>
-        {navPages.map((slug) => <a key={slug} href={`/${locale}/${slug}`} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug]}</a>)}
+        {navPages.map((slug) => <a key={slug} href={`/${locale}/${slug}`} aria-current={page === slug ? "page" : undefined}>{slug === "docs" ? docs.navLabel : copy.nav[slug]}</a>)}
       </nav>
       <div className="header-actions">
+        <ThemeToggle toDark={position.themeToDark} toLight={position.themeToLight} />
         <details className="language-menu">
           <summary aria-label={copy.common.language}>{locale.toUpperCase()}</summary>
           <div className="language-panel">
@@ -27,9 +34,9 @@ export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: P
         <details className="mobile-menu">
           <summary>{copy.common.menu}</summary>
           <nav aria-label={copy.common.menu}>
-            {["home", ...navPages, "contact"].map((slug) => {
+            {(["home", ...navPages, "contact"] as HeaderPage[]).map((slug) => {
               const href = slug === "home" ? `/${locale}` : `/${locale}/${slug}`;
-              return <a key={slug} href={href} aria-current={page === slug ? "page" : undefined}>{copy.nav[slug as PageSlug | "home"]}</a>;
+              return <a key={slug} href={href} aria-current={page === slug ? "page" : undefined}>{slug === "docs" ? docs.navLabel : copy.nav[slug as PageSlug | "home"]}</a>;
             })}
           </nav>
         </details>
@@ -40,6 +47,7 @@ export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: P
 
 export function SiteFooter({ locale }: { locale: Locale }) {
   const copy = getCopy(locale);
+  const docs = getDocsCopy(locale);
   return (
     <footer className="site-footer">
       <div><span className="wordmark">DN<span>—26</span></span><p>{copy.common.role}<br />{copy.common.location}</p></div>
@@ -47,6 +55,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
         <a href={`/${locale}/work`}>{copy.nav.work}</a>
         <a href={`/${locale}/services`}>{copy.nav.services}</a>
         <a href={`/${locale}/open-source`}>{copy.nav["open-source"]}</a>
+        <a href={`/${locale}/docs`}>{docs.navLabel}</a>
         <a href={`/${locale}/contact`}>{copy.nav.contact}</a>
       </nav>
       <div className="footer-links">

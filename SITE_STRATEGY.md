@@ -2,11 +2,11 @@
 
 ## Positioning
 
-Primary message: **Engineering leadership that stays close to the product and the code.**
+Primary message: **Full-spectrum product engineering across web, mobile, leadership, and AI-enabled delivery.**
 
-Role line: **Engineering Manager & Hands-on Mobile Engineer**
+Role line: **Engineering Manager · Web, Mobile & AI Product Engineer**
 
-Supporting promise: Denis leads mobile teams, architects Flutter platforms, improves release systems, and takes complex products through production.
+Supporting promise: Denis brings the breadth of 100+ shipped web products, deep mobile/platform engineering, multi-team leadership, and verification-first AI workflows to difficult product delivery.
 
 Audience order:
 
@@ -23,7 +23,8 @@ Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es
 
 - `/{locale}` - executive overview, proof, selected work, services, open source, experience, working model, and final CTA.
 - `/{locale}/work` - attributable case studies framed around context, responsibility, constraints, approach, and outcome.
-- `/{locale}/open-source` - full_svg_flutter technical authority page, feature coverage, migration concept, related woff2 package, and writing.
+- `/{locale}/open-source` - full_svg_flutter technical authority page and the relationship between the three runtime packages.
+- `/{locale}/docs` - on-site documentation hub for full_svg_flutter, woff2, and quickjs_engine with install, quick start, architecture, API map, production guidance, and source links.
 - `/{locale}/services` - client problems, engagement shapes, deliverables, and boundaries.
 - `/{locale}/experience` - career progression and selected technical scope.
 - `/{locale}/about` - concise professional story, current location/availability, and working principles.
@@ -33,12 +34,12 @@ Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es
 
 ## Homepage first viewport
 
-- Eyebrow: Engineering Manager & Hands-on Mobile Engineer
-- H1: I build mobile products - and the engineering systems behind them.
-- Proof sentence: Three teams, 15 engineers, multi-market delivery, hands-on Flutter architecture and production responsibility.
+- Eyebrow: Engineering Manager · Web, Mobile & AI Product Engineer
+- H1: I build digital products - from web and mobile to AI-enabled delivery.
+- Proof sentence: 11+ years, 100+ web products, mobile platform depth, multi-team leadership, and AI used as a verified engineering tool.
 - CTAs: Discuss a project, Explore selected work, Download CV.
 - Persistent contact access in the header.
-- Compact proof rail visible immediately: 3 teams, 15 engineers, 80+ releases, 10 apps on shared core, 5 months to production.
+- Compact proof rail visible immediately: 11+ years, 100+ web products, 3 teams, 15 engineers, and 3 public runtime packages.
 
 ## Case-study boundaries
 
@@ -46,6 +47,7 @@ Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es
 - Mobile platform modernization: shared Flutter core and reusable release workflows; no unsupported time-saved estimate.
 - Fintech operations platform: 100+ screens, KYC/AML/payments/permissions/realtime scope; client and private architecture remain undisclosed.
 - Geospatial commerce delivery: OpenStreetMap address-normalization and house-level matching pipeline; customer count is used only with source context.
+- Web product engineering: 100+ small-to-medium projects across commerce, admin tools, calculators, payments, and lead generation; no invented client names or financial metrics.
 
 ## Service model
 
@@ -55,6 +57,8 @@ Every public page exists under each required locale: `en`, `ru`, `de`, `fr`, `es
 - Mobile CI/CD and production readiness
 - Fractional mobile technical leadership
 - Engineering delivery assessment
+- Web product engineering and modernization
+- Applied AI workflow and production-shaped prototyping
 
 Each service explains trigger conditions, what Denis does, and a realistic engagement format. No guaranteed business result is promised.
 
@@ -62,24 +66,25 @@ Each service explains trigger conditions, what Denis does, and a realistic engag
 
 | Route | Primary intent | Supporting intent |
 | --- | --- | --- |
-| Home | Engineering Manager mobile / Flutter | hands-on mobile leader, Flutter Tech Lead |
-| Work | mobile engineering case studies | regulated mobile delivery, Flutter platform modernization |
+| Home | Engineering Manager web mobile AI | hands-on product engineer, technical leader |
+| Work | web and mobile engineering case studies | regulated mobile delivery, product engineering |
 | Open source | animated SVG Flutter | SMIL Flutter, SVGator Flutter, flutter_svg migration |
 | Services | Flutter consultant | mobile architecture consultant, Flutter modernization |
 | Experience | Engineering Manager portfolio | Mobile Engineering Manager, Lead Flutter Engineer |
 | About | Denis Nadey | mobile engineering leadership biography |
 | Contact | hire Flutter consultant / mobile engineering leader | project enquiry, engineering leadership contact |
+| Docs | full_svg_flutter documentation | Flutter WOFF2, QuickJS Flutter, animated SVG Flutter |
 
 No mass-generated location or keyword doorway pages will be created.
 
 ## Design system direction
 
 - Editorial, text-led layout with an engineering-specification feel.
-- Warm off-white canvas, near-black typography, electric cobalt accent, muted graphite secondary text, and one lime signal color for live/open-source details.
+- Warm off-white light theme and near-black dark theme, with electric cobalt, readable secondary text, and one lime signal color for runtime details.
 - Serif display face paired with a neutral grotesk; compact mono labels for evidence and system metadata.
 - Strong grid lines, oversized but controlled typography, square geometry, and restrained CSS motion.
 - No decorative technology-logo field, glassmorphism, fake terminal, or gradient spectacle.
-- Light theme only for maximum execution quality and consistency.
+- Premium light and dark themes with stored preference, system-aware first load, accessible contrast, and no flash of the wrong theme.
 
 ## Conversion and contact
 
@@ -87,4 +92,3 @@ No mass-generated location or keyword doorway pages will be created.
 - Enquiry form is honest: it validates inputs locally and opens a prefilled email in the visitor's email app. No secrets, third-party trackers, or pretend backend.
 - Direct email remains visible if a mail client is unavailable.
 - LinkedIn, GitHub, Telegram, and CV remain one click away.
-

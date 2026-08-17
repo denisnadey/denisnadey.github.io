@@ -13,7 +13,7 @@ export const en: SiteCopy = {
   },
   nav: { home: "Home", work: "Work", "open-source": "Open source", services: "Services", experience: "Experience", about: "About", contact: "Contact" },
   common: {
-    role: "Engineering Manager & Hands-on Mobile Engineer",
+    role: "Engineering Manager · Web, Mobile & AI Product Engineer",
     location: "Tbilisi, Georgia",
     availability: "Europe relocation / remote",
     menu: "Menu",
@@ -36,11 +36,11 @@ export const en: SiteCopy = {
     current: "Current page",
   },
   home: {
-    titleLead: "I build mobile products—",
-    titleEmphasis: "and the engineering systems behind them.",
-    intro: "Engineering leadership, Flutter architecture, multi-team delivery, CI/CD, and production responsibility—kept close to the code.",
+    titleLead: "I build digital products—",
+    titleEmphasis: "from web and mobile to AI-enabled delivery.",
+    intro: "Eleven-plus years across web, mobile, and engineering leadership: 100+ web projects, production Flutter platforms, multi-team delivery, and AI used as a serious engineering tool—not a badge.",
     proof: [
-      { value: "3", label: "concurrent product teams" },
+      { value: "100+", label: "web products delivered" },
       { value: "15", label: "engineers led" },
       { value: "80+", label: "production releases" },
       { value: "10", label: "apps on a shared Flutter core" },
@@ -212,4 +212,3 @@ export const en: SiteCopy = {
     timelineOptions: ["Not specified", "Urgent / current release", "Within 1 month", "1–3 months", "3+ months"],
   },
 };
-

@@ -33,6 +33,7 @@ async function writeResponse(path, destination, expectedStatus = 200) {
 
 for (const locale of locales) {
   await writeResponse(`/${locale}`, `${locale}/index.html`);
+  await writeResponse(`/${locale}/docs`, `${locale}/docs/index.html`);
   for (const page of pages) {
     await writeResponse(`/${locale}/${page}`, `${locale}/${page}/index.html`);
   }
@@ -49,4 +50,4 @@ await writeFile(
   '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/en/"><link rel="canonical" href="https://denisnadey.com/en"><title>Denis Nadey</title><script>location.replace("/en/"+location.search+location.hash)</script></head><body><a href="/en/">Continue to the website</a></body></html>\n',
 );
 
-console.log(`Exported ${locales.length * (pages.length + 1)} pages to ${output}`);
+console.log(`Exported ${locales.length * (pages.length + 2)} pages to ${output}`);

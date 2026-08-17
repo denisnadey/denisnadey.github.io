@@ -44,6 +44,14 @@ This file is the internal source-of-truth record for public website claims. The 
 | Rosselkhozbank: Flutter Developer, Jan 2021-Jan 2022 | Current CV; LinkedIn | High | Yes | CI/CD, Docker Compose, and test automation are verified. |
 | Edakratia product reached 10,000+ registered users in its first year | Current CV; LinkedIn has 10,000+ users | High | Yes | Avoid adding revenue or conversion claims. |
 | Founded/led a 2-4 person studio delivering 100+ web projects | Current CV; LinkedIn confirms 100+ projects | High | Yes | CV is more precise on team size. |
+| Web scope included sites, e-commerce, admin panels, calculators, payment integrations, and lead-generation systems | Current CV | High | Yes | Use this to establish substantive web-product breadth, not merely “frontend experience.” |
+
+## AI positioning
+
+| Claim | Source | Confidence | Public use | Notes |
+| --- | --- | --- | --- | --- |
+| Denis considers AI a core current engineering capability | Direct user statement, 2026-08-17 | High as self-positioning | Yes, carefully | Present as a working method and capability, not as an unsupported award, employer result, revenue claim, or years-of-experience metric. |
+| AI-assisted workflow covers research, solution exploration, prototyping, implementation, review, test design, and documentation | Direct user statement plus observable workflow used to build this website | Medium-high | Yes | Use specific workflow language and emphasize verification/human accountability. Do not claim production ML systems, model training, or named client outcomes without additional sources. |
 
 ## Open source and writing
 
@@ -56,6 +64,9 @@ This file is the internal source-of-truth record for public website claims. The 
 | GitHub repository has 17 stars, 4 forks, 99 commits | GitHub snapshot 2026-08-17 | High at snapshot | Omit from primary copy | Unstable vanity metrics. |
 | MIT licensed | GitHub repository | High | Yes | Current repository license. |
 | Creator of the woff2 Flutter package | LinkedIn activity; pub.dev API | High | Yes | Version 0.1.0 published 2026-05-19; positioned as a related early-stage package. |
+| Creator/maintainer of quickjs_engine | Monorepo source; pub.dev API | High | Yes | Current public version 0.1.3; bundles QuickJS-NG 0.14.0 for Android, iOS, macOS, Linux, and Windows. Describe its fork/upstream relationship accurately. |
+| woff2 version 0.1.0 has 150/160 pub points | pub.dev API snapshot 2026-08-17 | High at snapshot | Dated docs metadata only | Avoid implying maturity beyond the package's documented limits; WOFF2 TTC and Flutter Web are explicitly outside the current scope. |
+| quickjs_engine version 0.1.3 has 120/160 pub points | pub.dev API snapshot 2026-08-17 | High at snapshot | Dated docs metadata only | Runtime is based on QuickJS-NG and a fork of flutter_js; retain acknowledgements and trust-boundary caveats. |
 | Published "The problem: Flutter SVG support is usually static" | Medium, 2026-04-26 | High | Yes | Link externally; keep Medium canonical. |
 | Published "Runtime Animating SVGs in Flutter[native] Without Rive or Lottie" | DEV search result, 2026-04-29 | Medium-high | Yes | Link externally when the exact article URL can be resolved; otherwise surface the Medium article only. |
 
@@ -73,5 +84,5 @@ This file is the internal source-of-truth record for public website claims. The 
 - Repository: https://github.com/denisnadey/flutter_full_svg_support
 - pub.dev: https://pub.dev/packages/full_svg_flutter
 - woff2: https://pub.dev/packages/woff2
+- quickjs_engine: https://pub.dev/packages/quickjs_engine
 - Medium article: https://medium.com/@denis.nadey/the-problem-flutter-svg-support-is-usually-static-e91457cecc7f
-
