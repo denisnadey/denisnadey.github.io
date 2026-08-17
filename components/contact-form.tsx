@@ -34,7 +34,7 @@ export function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
   }
 
   return (
-    <form className="contact-form" onSubmit={submit} noValidate>
+    <form className="contact-form" action="mailto:denis.nadey@gmail.com" method="post" encType="text/plain" onSubmit={submit} noValidate>
       <div className="honeypot" aria-hidden="true"><label htmlFor="website">Website</label><input id="website" name="website" tabIndex={-1} autoComplete="off" /></div>
       <Field id="name" label={copy.name} error={errors.name}><input id="name" name="name" autoComplete="name" aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-error" : undefined} /></Field>
       <Field id="email" label={copy.email} error={errors.email}><input id="email" name="email" type="email" autoComplete="email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "email-error" : undefined} /></Field>
@@ -51,4 +51,3 @@ export function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
 function Field({ id, label, error, wide, children }: { id: string; label: string; error?: string; wide?: boolean; children: React.ReactNode }) {
   return <div className={`field${wide ? " field-wide" : ""}`}><label htmlFor={id}>{label}</label>{children}{error && <p className="field-error" id={`${id}-error`}>{error}</p>}</div>;
 }
-
