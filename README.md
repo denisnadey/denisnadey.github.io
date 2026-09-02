@@ -39,15 +39,14 @@ npm test
 Required locales are `en`, `ru`, `de`, `fr`, `es`, `it`, `pl`, `pt`, `ka`, and `ar`. Public routes live under a locale prefix and preserve the current page in the language switcher. Arabic renders right-to-left; Georgian and the other locales render left-to-right. The package documentation hub is available at `/{locale}/docs`.
 
 - Hand-edited canonical content: `content/en.ts`
-- Hand-edited Russian, German, and French: `content/ru.ts`, `content/de.ts`, `content/fr.ts`
-- Spanish, Italian, Polish, and Portuguese structured dictionaries: `content/*.json`
-- Georgian and Arabic dictionaries: `content/ka.ts`, `content/ar.ts`
+- Hand-written Russian, German, French, Georgian, and Arabic: `content/ru.ts`, `content/de.ts`, `content/fr.ts`, `content/ka.ts`, `content/ar.ts`
+- Hand-written Spanish, Italian, Polish, and Portuguese dictionaries: `content/*.json`
 - Shared URLs: `content/shared.ts`
 - Current Web/Mobile/AI positioning: `content/positioning.ts`
 - Localized runtime documentation: `content/docs.ts`
 - Schema and route lists: `content/types.ts`
 
-Company names, product names, package names, and programming technologies remain untranslated. When changing the English structure, update every locale and run the i18n test.
+Every locale is written by hand as native copy, not machine-translated. `content/positioning.ts` overrides the hero, SEO, work/services/about/contact intros, and final CTA of each base dictionary at render time, so keep those fields identical in both places. Conventions shared by all locales: the site speaks about Denis in the third person; company names, product names, package names, job titles (Engineering Manager, Flutter Team Lead, Senior Flutter Developer), `42 Paris`, `School 21`, and programming technologies stay in English; the hero `titleLead` ends with a space because it is concatenated directly with `titleEmphasis`. When changing the English structure, update every locale and run the i18n test.
 
 ## Contact form
 

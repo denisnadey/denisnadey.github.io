@@ -2,184 +2,184 @@
   "localeName": "Português",
   "seo": {
     "home": {
-      "title": "Engineering Manager e engenheiro móvel",
-      "description": "Denis Nadey lidera equipes móveis, arquiteta plataformas Flutter, melhora sistemas de entrega e coloca produtos complexos em produção."
+      "title": "Engineering Manager · Web, Mobile & AI",
+      "description": "Denis Nadey reúne 11+ anos em engenharia de produtos web, plataformas mobile, liderança de engenharia, open source e entrega assistida por IA."
     },
     "work": {
-      "title": "Trabalho de engenharia móvel",
-      "description": "Trabalho selecionado de entrega móvel, modernização de plataforma, fintech e engenharia geoespacial por Denis Nadey."
+      "title": "Projetos em Web, Mobile e Liderança de Engenharia",
+      "description": "Projetos selecionados de Denis Nadey em produtos web, plataformas mobile, entrega, fintech e engenharia open source."
     },
     "open-source": {
-      "title": "Código aberto full_svg_flutter",
-      "description": "A história de engenharia por trás do full_svg_flutter, um tempo de execução SVG estático e animado independente para Flutter."
+      "title": "full_svg_flutter · Open source",
+      "description": "A história de engenharia por trás do full_svg_flutter, um runtime autônomo para SVG estático e animado no Flutter."
     },
     "services": {
-      "title": "Flutter e serviços de engenharia móvel",
-      "description": "Entrega móvel de produtos, arquitetura Flutter, CI/CD, engenharia de lançamento, auditorias técnicas e liderança fracionária."
+      "title": "Serviços de Engenharia Web, Mobile & AI",
+      "description": "Engenharia de produto sênior em web, Flutter, sistemas de entrega, arquitetura e fluxos de trabalho práticos com IA."
     },
     "experience": {
-      "title": "Experiência em liderança em engenharia",
-      "description": "Progressão na carreira, desde engenharia de software prática até liderança em engenharia móvel com várias equipes."
+      "title": "Experiência em Liderança de Engenharia",
+      "description": "Trajetória que vai da engenharia de software hands-on à liderança de engenharia mobile com vários times."
     },
     "about": {
-      "title": "Sobre Denis Nadey",
-      "description": "Engineering Manager e engenheiro móvel prático focado em arquitetura, entrega e responsabilidade de produção."
+      "title": "Sobre Denis Nadey · Web, Mobile & AI",
+      "description": "Engineering Manager e engenheiro de produto hands-on, com raízes na web, experiência profunda em mobile e uma prática de entrega nativa em IA."
     },
     "contact": {
-      "title": "Contato Denis Nadey",
-      "description": "Discuta um produto móvel, arquitetura Flutter, desafio de entrega, compromisso de consultoria ou função de liderança em engenharia."
+      "title": "Fale com Denis Nadey · Web, Mobile & AI",
+      "description": "Converse com Denis Nadey sobre um produto web ou mobile, um desafio de liderança de engenharia, um sistema de entrega ou um fluxo de trabalho prático com IA."
     }
   },
   "nav": {
-    "home": "Lar",
-    "work": "Trabalhar",
-    "open-source": "Código aberto",
+    "home": "Início",
+    "work": "Projetos",
+    "open-source": "Open source",
     "services": "Serviços",
     "experience": "Experiência",
     "about": "Sobre",
     "contact": "Contato"
   },
   "common": {
-    "role": "Engineering Manager e engenheiro mobile hands-on",
-    "location": "Tbilissi, Geórgia",
-    "availability": "Mudança na Europa / remota",
+    "role": "Engineering Manager · Web, Mobile & AI Product Engineer",
+    "location": "Tbilisi, Geórgia",
+    "availability": "Relocação para a Europa / remoto",
     "menu": "Menu",
-    "language": "Linguagem",
+    "language": "Idioma",
     "close": "Fechar",
     "skip": "Pular para o conteúdo",
-    "selectedEvidence": "Evidência selecionada · CV atual",
-    "discuss": "Discuta um projeto",
-    "exploreWork": "Explore o trabalho selecionado",
-    "downloadCv": "Baixar currículo",
-    "viewOpenSource": "Ver código aberto",
+    "selectedEvidence": "Evidências selecionadas · CV atual",
+    "discuss": "Conversar sobre um projeto",
+    "exploreWork": "Explorar projetos selecionados",
+    "downloadCv": "Baixar CV",
+    "viewOpenSource": "Ver open source",
     "viewServices": "Ver serviços",
-    "readArticle": "Leia o detalhamento técnico",
-    "visitGithub": "Ver em GitHub",
-    "visitPub": "Ver em pub.dev",
-    "finalTitle": "Precisa enviar, modernizar ou estabilizar um produto móvel?",
-    "finalBody": "Diga-me o que o produto precisa fazer, onde a entrega está travada e como é um bom resultado.",
-    "contactDenis": "Contato Denis",
+    "readArticle": "Ler a análise técnica",
+    "visitGithub": "Ver no GitHub",
+    "visitPub": "Ver no pub.dev",
+    "finalTitle": "Precisa construir, modernizar ou destravar um produto digital?",
+    "finalBody": "Traga a restrição real – web, mobile, entrega do time ou um fluxo de trabalho com IA que precisa ficar pronto para produção.",
+    "contactDenis": "Falar com Denis",
     "external": "abre em uma nova aba",
     "current": "Página atual"
   },
   "home": {
-    "titleLead": "Eu construo produtos móveis -",
-    "titleEmphasis": "e os sistemas de engenharia por trás deles.",
-    "intro": "Liderança em engenharia, arquitetura Flutter, entrega multiequipe, CI/CD e responsabilidade de produção — mantidos próximos ao código.",
+    "titleLead": "Construo produtos digitais – ",
+    "titleEmphasis": "da web e do mobile à entrega assistida por IA.",
+    "intro": "Mais de onze anos entre web, mobile e liderança de engenharia: 100+ projetos web, plataformas Flutter em produção, entrega com vários times e IA usada como ferramenta séria de engenharia – não como enfeite.",
     "proof": [
       {
+        "value": "11+",
+        "label": "anos em engenharia de software"
+      },
+      {
+        "value": "100+",
+        "label": "produtos web entregues"
+      },
+      {
         "value": "3",
-        "label": "equipes de produtos simultâneas"
+        "label": "times de produto em paralelo"
       },
       {
         "value": "15",
         "label": "engenheiros liderados"
       },
       {
-        "value": "80+",
-        "label": "lançamentos de produção"
-      },
-      {
-        "value": "10",
-        "label": "aplicativos em um núcleo Flutter compartilhado"
-      },
-      {
-        "value": "5 meses",
-        "label": "greenfield para produção"
+        "value": "3",
+        "label": "pacotes runtime públicos"
       }
     ],
-    "mandateLabel": "O mandato",
-    "mandateTitle": "Profundidade técnica. Alavancagem organizacional. Um ponto de propriedade.",
-    "mandateBody": "Denis passou da entrega prática para a liderança sem deixar para trás a arquitetura, a revisão de código, a governança de lançamento e o escalonamento de produção. O resultado é um gerente que pode discutir o roteiro com o Produto, o modo de falha com um engenheiro e a decisão de liberação com o Compliance.",
-    "workLabel": "Trabalho selecionado",
-    "workTitle": "Produtos complexos, entregues.",
-    "workIntro": "O trabalho mais forte não é uma parede com logotipo. É o sistema por trás de um lançamento: propriedade, arquitetura, controles de lançamento e julgamento para simplificar no momento certo.",
+    "mandateLabel": "Engenharia de ponta a ponta",
+    "mandateTitle": "Amplitude web. Profundidade mobile. Execução nativa em IA.",
+    "mandateBody": "Denis começou entregando sites, sistemas de e-commerce, ferramentas administrativas, calculadoras, pagamentos e produtos de geração de leads. Depois migrou para plataformas mobile e liderança de vários times. Hoje a IA faz parte do ciclo de engenharia – da pesquisa e prototipagem à implementação, testes e documentação – com o julgamento humano respondendo pelo resultado.",
+    "workLabel": "Projetos selecionados",
+    "workTitle": "Produtos complexos, prontos para entregar.",
+    "workIntro": "O trabalho mais forte não é uma parede de logos. É o sistema por trás de um lançamento: responsabilidade, arquitetura, controles de release e o discernimento para simplificar na hora certa.",
     "servicesLabel": "Trabalhe comigo",
-    "servicesTitle": "Traga liderança mobile sênior onde ela muda o resultado.",
-    "servicesIntro": "Para um produto que precisa ser construído, resgatado, modernizado, auditado ou preparado para produção — e para equipes que precisam de liderança técnica sem perder a profundidade prática.",
-    "openLabel": "Engenharia de código aberto",
-    "openTitle": "SVG deve permanecer SVG.",
-    "openIntro": "full_svg_flutter é um renderizador independente para SVG estático e animado em Flutter: quadros-chave SMIL, CSS, metamorfose de caminho, filtros, máscaras, texto, ativos SVGator controlados por JavaScript e controle de reprodução - sem converter o ativo para outro formato.",
-    "careerLabel": "Progressão na carreira",
-    "careerTitle": "Da implementação à responsabilidade do portfólio.",
-    "careerIntro": "Mais de onze anos em web, fintech, mercados, plataformas móveis, produtos regulamentados e liderança em engenharia – ampliando o escopo enquanto permanece tecnicamente ativo.",
+    "servicesTitle": "Traga responsabilidade mobile sênior para onde ela muda o resultado.",
+    "servicesIntro": "Para um produto que precisa ser construído, resgatado, modernizado, auditado ou preparado para produção – e para times que precisam de liderança técnica sem perder profundidade hands-on.",
+    "openLabel": "Engenharia open source",
+    "openTitle": "SVG deve continuar SVG.",
+    "openIntro": "full_svg_flutter é um renderizador autônomo para SVG estático e animado no Flutter: SMIL, CSS keyframes, path morphing, filtros, máscaras, texto, assets do SVGator controlados por JavaScript e controle de reprodução – sem converter o asset para outro formato.",
+    "careerLabel": "Trajetória",
+    "careerTitle": "Da entrega web às plataformas mobile – e agora uma engenharia moldada pela IA.",
+    "careerIntro": "A progressão é cumulativa: amplitude em produtos web, trabalho profundo em sistemas mobile, gestão de engenharia e uma prática moderna assistida por IA que aumenta a velocidade sem abrir mão da responsabilidade.",
     "principlesLabel": "Modelo de trabalho",
-    "principlesTitle": "Torne as restrições visíveis. Mantenha a propriedade explícita.",
+    "principlesTitle": "Restrições à vista. Responsabilidade explícita.",
     "principles": [
-      "Comece com a restrição do negócio, não com a estrutura.",
-      "Torne a arquitetura proporcional ao produto e à equipe.",
-      "Entrega superficial e risco de liberação antecipada.",
-      "Automatize o trabalho de lançamento repetido e documente o caminho da exceção.",
-      "Comunique as soluções de compromisso numa linguagem que o decisor possa utilizar.",
-      "Deixe a plataforma mais fácil de operar do que foi encontrada."
+      "Comece pela restrição do negócio, não pelo framework.",
+      "Mantenha a arquitetura proporcional ao produto e ao time.",
+      "Exponha cedo os riscos de entrega e de release.",
+      "Automatize o trabalho repetitivo de release e documente o caminho de exceção.",
+      "Comunique os trade-offs na linguagem de quem decide.",
+      "Deixe a plataforma mais fácil de operar do que a encontrou."
     ]
   },
   "work": {
-    "title": "Trabalho que conecta arquitetura e produção.",
-    "intro": "Programas e produtos selecionados onde Denis tinha clara responsabilidade pela entrega, qualidade da plataforma ou por uma parte tecnicamente difícil do sistema. Os resultados da equipe são apresentados como resultados da equipe.",
+    "title": "Projetos em produtos web, plataformas mobile e sistemas de entrega.",
+    "intro": "Programas selecionados em que Denis foi responsável pela entrega, pela qualidade da plataforma ou por uma fronteira difícil do sistema. O portfólio começa na engenharia de produtos web e se expande para arquitetura mobile e responsabilidade por vários times.",
     "labels": {
       "context": "Contexto",
       "responsibility": "Responsabilidade",
       "approach": "Abordagem",
       "outcome": "Resultado",
-      "stack": "Pilha selecionada"
+      "stack": "Stack selecionada"
     },
-    "nda": "Os estudos de caso omitem intencionalmente arquitetura privada, credenciais, detalhes de produtos não divulgados e métricas comerciais internas.",
+    "nda": "Os estudos de caso omitem, de propósito, arquitetura privada, credenciais, detalhes de produtos não lançados e métricas comerciais internas.",
     "cases": [
       {
         "label": "01 · Entrega multimercado",
-        "title": "Três lançamentos regulamentados em três roteiros paralelos",
-        "summary": "Liderança de portfólio para Zinx Romania, Betoro Denmark e YoYo Sweden, com YoYo atingindo produção em aproximadamente cinco meses.",
-        "context": "Três equipes móveis simultâneas atendiam diferentes mercados regulamentados, enquanto o pessoal, as prioridades, as dependências e os requisitos de conformidade continuavam a mudar.",
-        "responsibility": "Liderei o portfólio de 15 engenheiros, treinei dois Team Leads, mantive a responsabilidade pela entrega e saúde da equipe e alinhei Produto, Design, Controle de Qualidade, Back-end, Pagamentos e Conformidade.",
-        "approach": "Introduziu um modelo operacional para estimativa, capacidade, mapeamento de dependências, marcos e portas de lançamento. Mantive o escalonamento técnico próximo o suficiente para resolver riscos de assinatura, SDK nativo, ponte WebView, armazenamento e incidentes.",
-        "outcome": "Todos os três produtos atingiram suas janelas regulamentadas de entrada em operação dentro do prazo. YoYo passou da implementação inicial para a produção em cerca de cinco meses.",
+        "title": "Três lançamentos regulados em três roadmaps paralelos",
+        "summary": "Liderança de portfólio para Zinx Romania, Betoro Denmark e YoYo Sweden, com o YoYo chegando à produção em cerca de cinco meses.",
+        "context": "Três times mobile entregavam ao mesmo tempo para mercados regulados diferentes, enquanto pessoas, prioridades, dependências e exigências de compliance continuavam mudando.",
+        "responsibility": "Liderou o portfólio de 15 engenheiros, orientou dois Team Leads, manteve a responsabilidade pela entrega e pela saúde dos times e alinhou Produto, Design, QA, Backend, Pagamentos e Compliance.",
+        "approach": "Introduziu um único modelo operacional para estimativa, capacidade, mapeamento de dependências, marcos e release gates. Manteve a escalação técnica perto o suficiente para resolver riscos de assinatura do app, SDKs nativos, ponte da WebView, lojas de aplicativos e incidentes.",
+        "outcome": "Os três produtos chegaram às suas janelas regulatórias de go-live dentro do prazo. O YoYo saiu da implementação inicial para a produção em cerca de cinco meses.",
         "stack": "Flutter, Dart, Kotlin, Swift, REST/WebSockets, Firebase, GitLab CI/CD, Codemagic, Fastlane, Sentry/Crashlytics"
       },
       {
-        "label": "02 · Modernização da plataforma",
-        "title": "Um núcleo Flutter compartilhado e sistema de lançamento para dez aplicações",
-        "summary": "Modernizou a plataforma sob um portfólio multimarcas enquanto os produtos ativos continuavam a ser enviados.",
-        "context": "Dez aplicativos compartilharam um núcleo Flutter e uma configuração específica da marca. A divergência de versões e a configuração repetida de versões aumentaram o risco de manutenção e produção.",
-        "responsibility": "Liderei a migração principal compartilhada do Flutter 3.19 para o 3.38.1 e padronizei os fluxos de trabalho reutilizáveis ​​GitLab CI/CD e Codemagic entre as equipes de produto.",
-        "approach": "Configuração consolidada da plataforma, listas de verificação de lançamento, padrões de revisão, testes automatizados, observabilidade e acompanhamento de incidentes enquanto delega a execução diária da equipe por meio de Team Leads.",
-        "outcome": "Redução da divergência de plataforma e trabalho repetido de configuração, melhoria da propriedade da versão e criação de uma linha de base consistente de prontidão para produção em todo o portfólio.",
-        "stack": "Flutter 3.19-3.38.1, GitLab CI/CD, Codemagic, Fastlane, testes automatizados, Sentry, Crashlytics"
+        "label": "02 · Modernização de plataforma",
+        "title": "Um core Flutter compartilhado e um sistema de release para dez aplicativos",
+        "summary": "Modernizou a plataforma por baixo de um portfólio multimarca enquanto os produtos ativos continuavam sendo lançados.",
+        "context": "Dez aplicativos compartilhavam um core Flutter e configurações específicas de cada marca. A divergência de versões e a configuração repetida de release aumentavam a manutenção e o risco em produção.",
+        "responsibility": "Liderou a migração do core compartilhado do Flutter 3.19 para o 3.38.1 e padronizou workflows reutilizáveis de GitLab CI/CD e Codemagic entre os times de produto.",
+        "approach": "Consolidou a configuração da plataforma, os checklists de release, os padrões de revisão, os testes automatizados, a observabilidade e o acompanhamento de incidentes, delegando a execução do dia a dia dos times aos Team Leads.",
+        "outcome": "Reduziu a divergência da plataforma e o trabalho repetido de configuração, deixou mais clara a responsabilidade pelas releases e criou uma base consistente de prontidão para produção em todo o portfólio.",
+        "stack": "Flutter 3.19–3.38.1, GitLab CI/CD, Codemagic, Fastlane, testes automatizados, Sentry, Crashlytics"
       },
       {
-        "label": "03 · Operações Fintech",
-        "title": "Uma plataforma de operações com mais de 100 telas construída do zero",
-        "summary": "Engenharia Flutter prática para um produto de operações protegido por VPN que abrange KYC, AML, cartões, IBAN, transações, permissões e fluxos de trabalho de suporte.",
-        "context": "As operações financeiras internas exigiam uma interface densa e confiável com muitos estados de negócios, regras de acesso, atualizações em tempo real e fluxos de trabalho sensíveis à conformidade.",
-        "responsibility": "Atuou como o único desenvolvedor Flutter para a plataforma descrita no currículo atual, enquanto trabalhava dentro de uma organização de engenharia mais ampla.",
-        "approach": "Criou tabelas reutilizáveis, formulários, permissões, controle de acesso e componentes em tempo real usando uma arquitetura modular e um modelo de entrega focado em testes.",
-        "outcome": "Entregue mais de 100 telas de produção em 18 meses com um modelo de componentes compartilhados que apoiou implementação consistente em domínios operacionais.",
-        "stack": "Flutter Web/Desktop, Dart, Clean Architecture, BLoC, get_it, REST, WebSockets, TDD, testes unitários e de ouro"
+        "label": "03 · Operações fintech",
+        "title": "Uma plataforma de operações com mais de 100 telas, construída do zero",
+        "summary": "Engenharia Flutter hands-on em um produto de operações protegido por VPN, cobrindo KYC, AML, cartões, IBAN, transações, permissões e fluxos de suporte.",
+        "context": "As operações financeiras internas exigiam uma interface densa e confiável, com muitos estados de negócio, regras de acesso, atualizações em tempo real e fluxos sensíveis a compliance.",
+        "responsibility": "Foi o único desenvolvedor Flutter da plataforma, atuando dentro de uma organização de engenharia mais ampla.",
+        "approach": "Criou tabelas, formulários, permissões, controle de acesso e componentes em tempo real reutilizáveis, com arquitetura modular e um modelo de entrega orientado a testes.",
+        "outcome": "Entregou mais de 100 telas em produção em 18 meses, com um modelo de componentes compartilhados que sustentou uma implementação consistente entre os domínios operacionais.",
+        "stack": "Flutter Web/Desktop, Dart, Clean Architecture, BLoC, get_it, REST, WebSockets, TDD, testes unitários e golden tests"
       },
       {
         "label": "04 · Comércio geoespacial",
-        "title": "Correspondência de entrega em nível residencial sem um geocodificador pago",
-        "summary": "Um pipeline de endereço personalizado baseado em OpenStreetMap para um mercado de alimentos agrícolas que atende 150.000 clientes registrados.",
-        "context": "A precisão da entrega dependia da normalização de endereços inconsistentes e da correspondência entre eles em nível interno, sem depender de um serviço de geocodificação externo pago.",
-        "responsibility": "Projetei e entreguei pessoalmente a geocodificação, a normalização de endereços e o pipeline de correspondência, juntamente com o trabalho de catálogo, carrinho, checkout, entrega e assinatura voltados para o usuário.",
-        "approach": "Dados OpenStreetMap combinados com normalização específica do produto e regras geoespaciais e, em seguida, integrados a saída em fluxos operacionais e de entrega ao cliente.",
-        "outcome": "Maior precisão no endereço de entrega e confiabilidade operacional para um produto que atende 150.000 clientes registrados.",
+        "title": "Endereços de entrega resolvidos no nível da casa, sem geocodificador pago",
+        "summary": "Um pipeline de endereços próprio, baseado em OpenStreetMap, para um marketplace de alimentos direto da fazenda com 150.000 clientes cadastrados.",
+        "context": "A precisão das entregas dependia de normalizar endereços inconsistentes e fazer o matching no nível da casa, sem depender de um serviço externo pago de geocodificação.",
+        "responsibility": "Projetou e entregou pessoalmente o pipeline de geocodificação, normalização e matching de endereços, em paralelo ao trabalho voltado ao usuário em catálogo, carrinho, checkout, entrega e assinaturas.",
+        "approach": "Combinou dados do OpenStreetMap com normalização específica do produto e regras geoespaciais, depois integrou o resultado aos fluxos operacionais e de entrega ao cliente.",
+        "outcome": "Melhorou a precisão dos endereços de entrega e a confiabilidade operacional de um produto que atende 150.000 clientes cadastrados.",
         "stack": "Flutter, Dart, OpenStreetMap, Firebase, REST, Clean Architecture, TDD, integrações nativas Android/iOS"
       }
     ]
   },
   "openSource": {
-    "title": "Uma mentalidade de mecanismo de navegador, trazida para Flutter SVG.",
-    "intro": "Denis criou e mantém full_svg_flutter, um tempo de execução de renderização independente para equipes que precisam que os ativos SVG existentes permaneçam SVG dentro de Flutter.",
-    "versionLabel": "Instantâneo público · 17 de agosto de 2026",
+    "title": "Uma mentalidade de motor de navegador, levada ao SVG no Flutter.",
+    "intro": "Denis criou e mantém o full_svg_flutter, um runtime de renderização autônomo para times que precisam que assets SVG existentes continuem sendo SVG dentro do Flutter.",
+    "versionLabel": "Snapshot público · 17 ago 2026",
     "proof": [
       {
         "value": "1.4.2",
-        "label": "versão atual"
+        "label": "release atual"
       },
       {
         "value": "140",
-        "label": "pontos de pub"
+        "label": "pub points"
       },
       {
         "value": "12",
@@ -187,190 +187,190 @@
       },
       {
         "value": "MIT",
-        "label": "licença de código aberto"
+        "label": "licença open source"
       }
     ],
-    "problemTitle": "O ativo funciona em um navegador. Em Flutter, a animação desaparece.",
-    "problemBody": "Muitos pipelines resolvem essa lacuna convertendo o ativo em código de animação Lottie, Rive, GIF, WebP ou Flutter personalizado. Essas podem ser boas ferramentas – mas a conversão tem o custo errado quando SVG já é a fonte da verdade.",
-    "engineTitle": "Um mecanismo de preservação de DOM para SVG estático e animado",
-    "engineBody": "O pacote analisa o modelo do documento, CSS, tempo, filtros, texto e estado de interação e, em seguida, pinta dentro de Flutter. As exportações SVGator orientadas por JavaScript são executadas por meio de um mecanismo QuickJS integrado; SVGs sem scripts não pagam nenhum custo de inicialização do JavaScript.",
-    "coverageTitle": "O que o tempo de execução cobre",
+    "problemTitle": "O asset funciona no navegador. No Flutter, a animação some.",
+    "problemBody": "Muitos pipelines resolvem essa lacuna convertendo o asset para Lottie, Rive, GIF, WebP ou código de animação Flutter feito à mão. São boas ferramentas – mas a conversão é o custo errado quando o SVG já é a fonte da verdade.",
+    "engineTitle": "Um único motor que preserva o DOM para SVG estático e animado",
+    "engineBody": "O pacote faz o parsing do modelo do documento, do CSS, do timing, dos filtros, do texto e do estado de interação, e então pinta dentro do Flutter. Exportações do SVGator controladas por JavaScript rodam em um motor QuickJS embarcado; SVGs sem scripts não pagam nenhum custo de inicialização de JavaScript.",
+    "coverageTitle": "O que o runtime cobre",
     "coverage": [
-      "Geometria estática, gradientes, padrões, recortes e máscaras",
+      "Geometria estática, gradientes, patterns, clipping e máscaras",
       "Animação SMIL e CSS @keyframes",
-      "Metamorfose de caminho, caminhos de movimento e controle de reprodução",
-      "Todas as 17 primitivas de filtro SVG",
-      "Rich text, textPath, bidi/RTL e metadados de acessibilidade",
-      "Exportações JavaScript e SVGator em linha",
-      "Migração de API estática compatível com flutter_svg",
+      "Path morphing, motion paths e controle de reprodução",
+      "Todas as 17 primitivas de filtro do SVG",
+      "Texto rico, textPath, bidi/RTL e metadados de acessibilidade",
+      "JavaScript inline e exportações do SVGator",
+      "Migração da API estática compatível com flutter_svg",
       "Android, iOS, macOS, Windows e Linux"
     ],
     "migrationTitle": "Um caminho de migração prático",
-    "migrationBody": "O uso estático existente do SvgPicture geralmente pode mudar com uma alteração de importação. FSvgPicture detecta automaticamente marcadores de animação, enquanto AnimatedSvgController adiciona pausa, busca, taxa, direção e controle de visualização SVG quando o produto precisa.",
-    "demoTitle": "Um arquivo SVG. Animação nativa do navegador aqui; renderização Flutter nativa no pacote.",
-    "demoBody": "Esta página exibe o ativo SVG animado do próprio projeto no navegador. Em um aplicativo Flutter, full_svg_flutter renderiza o mesmo formato de origem dentro de Flutter sem WebView ou etapa de conversão.",
+    "migrationBody": "O uso estático existente de SvgPicture muitas vezes migra com uma simples troca de import. FSvgPicture detecta automaticamente marcadores de animação, e AnimatedSvgController adiciona pausa, seek, velocidade, direção e controle de views do SVG quando o produto precisa.",
+    "demoTitle": "Um único arquivo SVG. Animação nativa do navegador aqui; renderização nativa do Flutter no pacote.",
+    "demoBody": "Esta página exibe no navegador o asset SVG animado do próprio projeto. Em um aplicativo Flutter, o full_svg_flutter renderiza o mesmo formato de origem dentro do Flutter, sem WebView e sem etapa de conversão.",
     "relatedTitle": "Pacote relacionado: woff2",
-    "relatedBody": "Construir um tempo de execução SVG sério expôs outro caso extremo: fontes incorporadas como WOFF ou WOFF2. Denis lançou um decodificador Dart puro em estágio inicial e um wrapper FontLoader para que os pipelines Flutter possam registrar esses formatos de fonte sem o código de plug-in nativo específico do aplicativo.",
-    "writingTitle": "Redação técnica",
-    "articleTitle": "O problema: o suporte Flutter SVG geralmente é estático",
-    "articleDescription": "Uma explicação prática da lacuna de renderização, soluções alternativas comuns, controle de reprodução, compensações de desempenho e quando manter SVG como SVG é a escolha certa."
+    "relatedBody": "Construir um runtime SVG sério expôs outro edge case: fontes embutidas como WOFF ou WOFF2. Denis publicou um decoder em Dart puro, ainda em estágio inicial, e um wrapper para o FontLoader, para que pipelines Flutter registrem esses formatos de fonte sem código nativo de plugin específico do app.",
+    "writingTitle": "Escrita técnica",
+    "articleTitle": "O problema: o suporte a SVG no Flutter costuma ser estático",
+    "articleDescription": "Uma explicação prática da lacuna de renderização, das soluções alternativas mais comuns, do controle de reprodução, dos trade-offs de performance e de quando manter SVG como SVG é a escolha certa."
   },
   "services": {
-    "title": "Responsabilidade mobile sênior, ajustada ao problema.",
-    "intro": "Para empresas que precisam colocar um produto em produção, tornar a plataforma mobile mais segura de evoluir ou dar à equipe uma liderança técnica e de delivery mais clara.",
+    "title": "Engenharia de produto sênior em web, mobile e IA.",
+    "intro": "Chame Denis quando um produto digital precisa de alguém que responda, com credibilidade, por interface, arquitetura, entrega, produção e pelos fluxos de trabalho modernos com IA que podem acelerar cada etapa.",
     "labels": {
       "signal": "Quando isso ajuda",
       "action": "O que Denis faz",
-      "format": "Engajamento típico"
+      "format": "Formato típico"
     },
     "items": [
       {
-        "title": "Entrega e resgate de produtos móveis",
-        "signal": "Um roteiro está falhando, a propriedade está fragmentada ou uma versão crítica tem muitas incógnitas.",
-        "action": "Esclareça restrições, mapeie dependências, redefina marcos, assuma a responsabilidade pelo escalonamento técnico e estabeleça um modelo de entrega pronto para produção.",
-        "format": "Avaliação de entrega seguida de liderança interina prática ou um programa de recuperação focado."
+        "title": "Entrega e resgate de produto mobile",
+        "signal": "O roadmap está atrasando, a responsabilidade está fragmentada ou uma release crítica tem incógnitas demais.",
+        "action": "Esclarece restrições, mapeia dependências, redefine marcos, assume a escalação técnica e estabelece um modelo de entrega pronto para produção.",
+        "format": "Avaliação da entrega seguida de liderança interina hands-on ou de um programa de recuperação focado."
       },
       {
         "title": "Arquitetura e modernização Flutter",
-        "signal": "O aplicativo é difícil de mudar, as atualizações continuam interrompendo a entrega ou as variantes de marca/produto divergem.",
-        "action": "Revise limites, gerenciamento de estado, dependências, integração nativa, testes e riscos de migração; em seguida, sequenciar a modernização em torno da entrega ativa.",
-        "format": "Revisão de arquitetura, plano priorizado e liderança de implementação opcional."
+        "signal": "O app é difícil de mudar, cada upgrade quebra a entrega ou as variantes de marca e produto estão divergindo.",
+        "action": "Revisa limites, gerenciamento de estado, dependências, integração nativa, testes e risco de migração; depois planeja a modernização em etapas, sem parar a entrega em andamento.",
+        "format": "Revisão de arquitetura, plano priorizado e, opcionalmente, liderança da implementação."
       },
       {
-        "title": "Integração nativa e engenharia de lançamento",
-        "signal": "Assinaturas, armazenamentos, SDKs, links diretos, notificações, WebViews ou canais de plataforma estão bloqueando uma versão confiável.",
-        "action": "Trace os limites da plataforma, corrija problemas de integração e ciclo de vida, fortaleça o caminho de lançamento e documente a propriedade operacional.",
-        "format": "Engajamento técnico focado em torno de um problema definido de integração ou lançamento."
+        "title": "Integração nativa e engenharia de release",
+        "signal": "Assinatura do app, lojas de aplicativos, SDKs, deep links, notificações, WebViews ou platform channels estão impedindo uma release confiável.",
+        "action": "Rastreia a fronteira com a plataforma, corrige problemas de integração e de ciclo de vida, fortalece o caminho de release e documenta quem responde pela operação.",
+        "format": "Trabalho técnico focado em um problema definido de integração ou de release."
       },
       {
-        "title": "CI/CD móvel e prontidão para produção",
-        "signal": "Os pipelines são reconstruídos por aplicativo, os lançamentos dependem de conhecimento manual ou os incidentes têm proprietários pouco claros.",
-        "action": "Padronize pipelines, fluxo de assinatura e ambiente, portas de liberação, verificações, observabilidade e acompanhamento de incidentes sem projetar demais a plataforma.",
-        "format": "Auditoria mais sprint de implementação ou capacitação de plataforma em várias equipes."
+        "title": "CI/CD mobile e prontidão para produção",
+        "signal": "Os pipelines são reconstruídos a cada app, as releases dependem de conhecimento manual ou os incidentes não têm dono claro.",
+        "action": "Padroniza pipelines, fluxo de assinatura e de ambientes, release gates, verificações, observabilidade e acompanhamento de incidentes, sem superengenharia na plataforma.",
+        "format": "Auditoria mais sprint de implementação, ou habilitação da plataforma para vários times."
       },
       {
-        "title": "Liderança técnica móvel fracionária",
-        "signal": "Uma empresa precisa de orientação móvel sênior antes — ou em vez de — contratar um líder em tempo integral.",
-        "action": "Decisões próprias de arquitetura, planejamento técnico, suporte de contratação, treinamento Team Lead e risco de entrega, permanecendo disponível para escalonamento prático.",
-        "format": "Mandato recorrente de meio período com resultados explícitos e direitos de decisão."
+        "title": "Liderança técnica mobile em tempo parcial",
+        "signal": "A empresa precisa de direção mobile sênior antes de contratar um líder em tempo integral – ou em vez disso.",
+        "action": "Assume as decisões de arquitetura, o planejamento técnico, o apoio à contratação, a orientação dos Team Leads e o risco de entrega, continuando disponível para escalação hands-on.",
+        "format": "Mandato recorrente em tempo parcial, com resultados e poder de decisão explícitos."
       },
       {
-        "title": "Avaliação de entrega de engenharia",
-        "signal": "A liderança precisa de uma visão independente do motivo pelo qual a entrega móvel parece imprevisível.",
-        "action": "Examine o formato do roteiro, as interfaces da equipe, o risco técnico, a governança da versão, os sinais de qualidade e a propriedade; retornar um plano de ação priorizado e defensável.",
-        "format": "Breve envolvimento de diagnóstico com entrevistas, revisão de artefatos e uma leitura executiva/técnica."
+        "title": "Avaliação da entrega de engenharia",
+        "signal": "A liderança precisa de uma visão independente sobre por que a entrega mobile parece imprevisível.",
+        "action": "Examina o formato do roadmap, as interfaces entre times, o risco técnico, a governança de release, os sinais de qualidade e a responsabilidade; devolve um plano de ação priorizado e defensável.",
+        "format": "Diagnóstico curto com entrevistas, revisão de artefatos e uma apresentação de resultados executiva/técnica."
       }
     ],
-    "boundaryTitle": "O conselho permanece proporcional ao produto.",
-    "boundaryBody": "Uma auditoria não é um pretexto para uma reescrita. As recomendações distinguem o risco urgente de produção do trabalho de manutenção, explicam as compensações e identificam o que deve permanecer inalterado."
+    "boundaryTitle": "A recomendação continua proporcional ao produto.",
+    "boundaryBody": "Uma auditoria não é pretexto para reescrever tudo. As recomendações separam risco urgente em produção de trabalho de manutenibilidade, explicam os trade-offs e apontam o que deve continuar como está."
   },
   "experience": {
-    "title": "Aumentando o escopo, sem deixar a engenharia para trás.",
-    "intro": "Uma narrativa de carreira desde a entrega de produtos da web até a engenharia sênior Flutter, propriedade de plataforma, responsabilidade Team Lead e liderança móvel de várias equipes.",
+    "title": "Escopo crescente, sem abandonar a engenharia.",
+    "intro": "Uma trajetória que vai da entrega de produtos web à engenharia Flutter sênior, à responsabilidade por plataforma, ao papel de Team Lead e à liderança mobile de vários times.",
     "roles": [
       {
-        "period": "janeiro de 2026 — julho de 2026",
+        "period": "jan 2026 – jul 2026",
         "company": "BrainRocket · Limassol, Chipre",
-        "title": "Engineering Manager, Móvel",
-        "summary": "Liderou três equipes simultâneas e 15 engenheiros em mercados regulamentados de iGaming, com dois Team Leads como subordinados diretos.",
-        "evidence": "Três lançamentos de mercado dentro do prazo; um produto greenfield para produção em cerca de cinco meses; núcleo compartilhado em dez aplicativos; liberação em nível de portfólio e responsabilidade por incidentes."
+        "title": "Engineering Manager, Mobile",
+        "summary": "Liderou três times em paralelo e 15 engenheiros em mercados regulados de iGaming, com dois Team Leads como subordinados diretos.",
+        "evidence": "Três lançamentos de mercado no prazo; um produto greenfield em produção em cerca de cinco meses; core compartilhado entre dez apps; responsabilidade por releases e incidentes no nível do portfólio."
       },
       {
-        "period": "Dez de 2024 — Dez de 2025",
+        "period": "dez 2024 – dez 2025",
         "company": "BrainRocket · Limassol, Chipre",
         "title": "Flutter Team Lead",
-        "summary": "Liderança de equipe combinada com arquitetura modular, revisão de código, escalonamento nativo e propriedade de lançamento regulamentado.",
-        "evidence": "Swiper Ontario e outros lançamentos; Clean Architecture com BLoC/Riverpod; Canais da plataforma Kotlin/Swift; recuperação após uma saída de equipe externa."
+        "summary": "Combinou a liderança do time com arquitetura modular, revisão de código, escalação nativa e responsabilidade por releases reguladas.",
+        "evidence": "Swiper Ontario e outras releases; Clean Architecture com BLoC/Riverpod; platform channels em Kotlin/Swift; recuperação após a saída de um time externo."
       },
       {
-        "period": "julho de 2023 — dezembro de 2024",
+        "period": "jul 2023 – dez 2024",
         "company": "CFP Technology (CFPS) · Remoto",
-        "title": "Desenvolvedor Sênior Flutter",
-        "summary": "Construiu uma plataforma de operações Flutter de produção protegida por VPN, cobrindo fluxos de trabalho de fintech e conformidade.",
-        "evidence": "Mais de 100 telas em 18 meses; formulários reutilizáveis, tabelas, permissões, controle de acesso e componentes em tempo real."
+        "title": "Senior Flutter Developer",
+        "summary": "Construiu uma plataforma de operações Flutter em produção, protegida por VPN, cobrindo fluxos de fintech e compliance.",
+        "evidence": "100+ telas em 18 meses; formulários, tabelas, permissões, controle de acesso e componentes em tempo real reutilizáveis."
       },
       {
-        "period": "janeiro de 2022 — julho de 2023",
+        "period": "jan 2022 – jul 2023",
         "company": "Esh Derevenskoye · Remoto",
-        "title": "Desenvolvedor Sênior Flutter",
-        "summary": "Construímos um mercado e jornadas de pedidos recorrentes para um produto premium de entrega de alimentos agrícolas.",
-        "evidence": "Projetei uma geocodificação OpenStreetMap personalizada e um pipeline de correspondência em nível doméstico para um produto que atende 150.000 clientes registrados."
+        "title": "Senior Flutter Developer",
+        "summary": "Construiu as jornadas de marketplace e de pedidos recorrentes de um produto premium de entrega de alimentos direto da fazenda.",
+        "evidence": "Projetou um pipeline próprio de geocodificação com OpenStreetMap e matching no nível da casa para um produto com 150.000 clientes cadastrados."
       },
       {
-        "period": "Janeiro de 2021 — Janeiro de 2022",
+        "period": "jan 2021 – jan 2022",
         "company": "Rosselkhozbank · Moscou",
-        "title": "Desenvolvedor Flutter",
-        "summary": "Desenvolvimento de fluxos de mercado, B2B, P2P e serviços financeiros para produtos agrícolas.",
-        "evidence": "Introduziu CI/CD, ambientes Docker Compose e testes de ouro, widget e integração."
+        "title": "Flutter Developer",
+        "summary": "Desenvolveu fluxos de marketplace, B2B, P2P e serviços financeiros para produtos agrícolas.",
+        "evidence": "Introduziu CI/CD, ambientes com Docker Compose e golden tests, widget tests e integration tests."
       },
       {
-        "period": "2015 — 2020",
-        "company": "Novorossisk",
-        "title": "Engenharia web, liderança de estúdio e primeiros Flutter",
-        "summary": "Fundou um pequeno estúdio, entregou mais de 100 projetos web e mais tarde liderou a implementação de AngularDart/Flutter para Edakratia.",
-        "evidence": "Estúdio para duas a quatro pessoas; sistemas de pagamento e geração de leads; produto de entrega de alimentos com mais de 10.000 usuários registrados em seu primeiro ano."
+        "period": "2015 – 2020",
+        "company": "Novorossiysk",
+        "title": "Engenharia web, liderança de estúdio e primeiros passos em Flutter",
+        "summary": "Fundou um pequeno estúdio, entregou mais de 100 projetos web e, mais tarde, liderou a implementação em AngularDart/Flutter para a Edakratia.",
+        "evidence": "Estúdio de duas a quatro pessoas; sistemas de pagamento e de geração de leads; produto de entrega de comida com mais de 10.000 usuários cadastrados no primeiro ano."
       }
     ],
-    "educationTitle": "Educação",
-    "educationBody": "42 Paris, Programa de Engenharia de Software (2022 até o presente, meio período); Escola 21 (2020-2022, transferida para 42 Paris); Faculdade de Construção e Economia de Novorossiysk, Técnico em Informática Aplicada/Engenharia de Software (2015-2019).",
+    "educationTitle": "Formação",
+    "educationBody": "42 Paris, programa de Engenharia de Software (2022 – atual, meio período); School 21 (2020 – 2022, transferido para a 42 Paris); Colégio de Construção e Economia de Novorossiysk, Técnico em Informática Aplicada / Engenharia de Software (2015 – 2019).",
     "languagesTitle": "Idiomas",
-    "languagesBody": "Russo – nativo. Inglês — B2+, usado diariamente para comunicação com as partes interessadas, documentação técnica, entrevistas e entrega multifuncional. Letão — A2."
+    "languagesBody": "Russo – nativo. Inglês – B2+, usado todos os dias em comunicação com stakeholders, documentação técnica, entrevistas e entregas com times multifuncionais. Letão – A2."
   },
   "about": {
-    "title": "Um gestor que ainda quer entender o modo de falha.",
-    "intro": "Denis é Engineering Manager e engenheiro mobile hands-on, com mais de 11 anos em software e mais de 6 anos em Flutter.",
+    "title": "Engenheiro de produto antes de qualquer framework.",
+    "intro": "Denis é Engineering Manager e engenheiro hands-on, com 11+ anos entre produtos web, plataformas mobile, runtimes open source e entrega assistida por IA.",
     "paragraphs": [
-      "Sua carreira começou com produtos da web e um pequeno estúdio de entrega, passou por bancos, mercados, operações de fintech e funções seniores de Flutter, depois se expandiu para Team Lead e responsabilidade de várias equipes Engineering Manager.",
-      "O fio condutor é a propriedade além das fronteiras: restrições de produto, arquitetura de aplicativo, integração nativa Android/iOS, CI/CD, liberação de loja, observabilidade, depuração de produção e o sistema de equipe necessário para fazer essas peças funcionarem juntas.",
-      "A liderança não substituiu a engenharia. Denis continua sendo mais útil quando uma equipe precisa de alguém que possa tomar uma decisão de portfólio, treinar um Team Lead, revisar a arquitetura e participar do escalonamento técnico quando o lançamento estiver em risco."
+      "A carreira começou na web: um estúdio pequeno, mais de 100 projetos entregues, e-commerce, sistemas administrativos, pagamentos, calculadoras e fluxos de geração de leads. Essa amplitude formou uma mentalidade de produto antes da passagem por banco, marketplaces, fintech e Flutter.",
+      "O mobile trouxe restrições de plataforma mais profundas – integração com Kotlin e Swift, assinatura do app, lojas de aplicativos, CI/CD, observabilidade, incidentes em produção e arquitetura compartilhada entre vários aplicativos. Mais tarde, a liderança estendeu essa responsabilidade a Team Leads, roadmaps, contratação e três times em paralelo.",
+      "A IA hoje faz parte do método de trabalho. Denis a usa para comprimir pesquisa, explorar arquiteturas, prototipar interfaces, implementar e revisar código, desenhar testes e produzir documentação. O padrão continua o mesmo: evidência, trade-offs explícitos e uma pessoa responsável pelo que chega à produção."
     ],
     "usefulTitle": "Problemas que valem uma conversa",
     "usefulItems": [
-      "Um produto móvel precisa de um caminho confiável desde o roteiro até a produção",
-      "Uma plataforma Flutter acumulou divergência ou risco de atualização",
-      "SDKs nativos, assinatura, WebViews ou ferramentas de lançamento estão bloqueando a entrega",
-      "Várias equipes precisam de um modelo operacional sem perder autonomia",
-      "Uma empresa precisa de liderança móvel fracionária ou de uma avaliação técnica independente",
-      "Um pipeline Flutter existente com alto peso de SVG precisa de recursos além da renderização estática"
+      "Um produto mobile precisa de um caminho crível do roadmap até a produção",
+      "Uma plataforma Flutter acumulou divergência ou risco de upgrade",
+      "SDKs nativos, assinatura do app, WebViews ou ferramentas de release estão travando a entrega",
+      "Vários times precisam de um único modelo operacional sem perder autonomia",
+      "A empresa precisa de liderança mobile em tempo parcial ou de uma avaliação técnica independente",
+      "Um pipeline Flutter existente, carregado de SVG, precisa de recursos além da renderização estática"
     ],
     "nowTitle": "Localização e disponibilidade",
-    "nowBody": "Baseado em Tbilisi, Geórgia. Aberto ao trabalho remoto e à relocalização europeia. Conversas relevantes incluem Engineering Manager, Mobile Engineering Manager, Mobile Tech Lead, Lead Flutter Engineer, consultoria de arquitetura e compromissos de entrega focados."
+    "nowBody": "Mora em Tbilisi, Geórgia. Aberto a trabalho remoto e a relocação para a Europa. Conversas relevantes incluem posições de Engineering Manager, Mobile Engineering Manager, Mobile Tech Lead e Lead Flutter Engineer, consultoria de arquitetura e projetos de entrega focados."
   },
   "contact": {
-    "title": "Traga o verdadeiro problema móvel.",
-    "intro": "Uma versão que não se estabilizará, uma arquitetura que retarda todas as mudanças, uma equipe que precisa de uma propriedade mais clara ou um produto que precisa de um caminho confiável para a produção.",
+    "title": "Traga a restrição real do produto.",
+    "intro": "Um produto web que precisa de um caminho até a produção, uma release mobile que não estabiliza, um time sem responsabilidades claras ou um fluxo de trabalho com IA que precisa virar engenharia confiável.",
     "directTitle": "Contato direto",
-    "response": "E-mail é o preferido. LinkedIn, GitHub e Telegram também estão disponíveis.",
-    "formTitle": "Prepare uma consulta de projeto",
-    "formIntro": "O formulário valida o essencial e abre um rascunho estruturado em seu aplicativo de e-mail. Nada é carregado ou rastreado.",
+    "response": "E-mail é o canal preferido. LinkedIn, GitHub e Telegram também funcionam.",
+    "formTitle": "Prepare sua solicitação de projeto",
+    "formIntro": "O formulário valida o essencial e depois abre um rascunho estruturado no seu aplicativo de e-mail. Nada é enviado nem rastreado.",
     "name": "Nome",
     "email": "E-mail",
     "company": "Empresa",
-    "need": "Em que você precisa de ajuda?",
+    "need": "Com o que você precisa de ajuda?",
     "budget": "Faixa de orçamento",
-    "timeline": "Linha do tempo",
+    "timeline": "Prazo",
     "optional": "opcional",
     "send": "Preparar e-mail",
-    "prepared": "Seu rascunho de e-mail está pronto. Se não abriu, use o endereço de e-mail direto nesta página.",
-    "privacy": "Privado por design: este site não armazena nem transmite dados de formulário. O envio abre seu próprio aplicativo de e-mail.",
+    "prepared": "Seu rascunho de e-mail está pronto. Se ele não abriu, use o endereço de e-mail direto desta página.",
+    "privacy": "Privacidade por design: este site não armazena nem transmite os dados do formulário. Ao enviar, abre o seu próprio aplicativo de e-mail.",
     "errors": {
-      "name": "Por favor, digite seu nome.",
-      "email": "Insira um endereço de e-mail válido.",
-      "need": "Adicione uma breve descrição do problema."
+      "name": "Digite seu nome.",
+      "email": "Digite um endereço de e-mail válido.",
+      "need": "Descreva o problema em poucas palavras."
     },
     "budgetOptions": [
-      "Não especificado",
-      "Menos de 10 mil euros",
-      "10 mil euros – 25 mil euros",
-      "25 mil euros – 50 mil euros",
-      "50 mil euros +"
+      "Não informado",
+      "Menos de 10 mil €",
+      "10–25 mil €",
+      "25–50 mil €",
+      "Acima de 50 mil €"
     ],
     "timelineOptions": [
-      "Não especificado",
-      "Versão urgente/atual",
-      "Dentro de 1 mês",
+      "Não informado",
+      "Urgente / release em andamento",
+      "Em até 1 mês",
       "1–3 meses",
-      "3+ meses"
+      "Mais de 3 meses"
     ]
   }
 }
