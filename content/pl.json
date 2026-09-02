@@ -3,7 +3,7 @@
   "seo": {
     "home": {
       "title": "Engineering Manager · Web, Mobile & AI",
-      "description": "Denis Nadey – ponad 11 lat doświadczenia w inżynierii produktów webowych, platformach mobilnych, kierowaniu zespołami, open source i delivery wspieranym przez AI."
+      "description": "Denis Nadey: ponad 11 lat w produktach webowych, platformach mobilnych, kierowaniu zespołami, open source i delivery wspieranym przez AI."
     },
     "work": {
       "title": "Projekty · Web, Mobile & Engineering Leadership",
@@ -14,7 +14,7 @@
       "description": "Historia inżynierska full_svg_flutter – samodzielnego runtime'u do statycznych i animowanych SVG we Flutterze."
     },
     "services": {
-      "title": "Usługi · Web, Mobile & AI Engineering",
+      "title": "Usługi · Flutter, Web & AI Engineering",
       "description": "Inżynieria produktu na poziomie senior: web, Flutter, systemy delivery, architektura i praktyczne workflow z AI."
     },
     "experience": {
@@ -50,6 +50,7 @@
     "selectedEvidence": "Wybrane fakty · aktualne CV",
     "discuss": "Porozmawiajmy o projekcie",
     "exploreWork": "Zobacz wybrane projekty",
+    "viewExperience": "Zobacz całe doświadczenie",
     "downloadCv": "Pobierz CV",
     "viewOpenSource": "Zobacz open source",
     "viewServices": "Zobacz usługi",

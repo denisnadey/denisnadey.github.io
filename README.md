@@ -56,7 +56,14 @@ No form data is uploaded, stored, or tracked. If a server-side delivery provider
 
 ## SEO
 
-The site includes localized titles and descriptions, canonicals, hreflang plus `x-default`, correct HTML language attributes, sitemap, robots rules, web manifest, Open Graph/X metadata, and JSON-LD for `Person`, `ProfilePage`, `WebPage`, `ContactPage`, and `SoftwareSourceCode` where appropriate.
+The site includes localized titles with the brand appended (`… · Denis Nadey`), descriptions, canonicals, hreflang plus `x-default` in both the HTML and the sitemap, correct HTML language attributes, a share image on every page, robots rules, a web manifest with PNG and maskable icons, Open Graph/X metadata, and a JSON-LD graph: `WebSite`, `Person`, `ProfilePage`, `WebPage`/`AboutPage`/`ContactPage`, `CollectionPage`, `BreadcrumbList`, and `SoftwareSourceCode`. Shared helpers live in `app/seo.ts` and `content/shared.ts`.
+
+Conventions that keep this working:
+
+- Every public URL ends with a trailing slash (`/en/`, `/en/work/`). GitHub Pages serves directory indexes that way and 301-redirects the bare form, so canonicals, hreflang, sitemap entries, and internal links must all use `routePath()` from `content/shared.ts`.
+- vinext streams page metadata into `<body>` for browsers and renders it blocking inside `<head>` only for HTML-limited bots. Search engines ignore `rel=canonical` and hreflang outside `<head>`, so `scripts/export-static.mjs` requests every page with a bot user agent and fails the export if any required tag is not in `<head>`. `tests/rendered-html.test.mjs` covers the same rule.
+- `scripts/build-info.mjs` runs before each build (`prebuild`) and writes `content/build-info.ts` with the last commit date, which feeds `lastmod` in the sitemap and `dateModified` in structured data.
+- GitHub Pages cannot send response headers, so the Content Security Policy is mirrored as a `<meta http-equiv>` tag in `app/[locale]/layout.tsx`. HSTS, `X-Frame-Options`, long cache lifetimes for `/_next/static/*`, Brotli, and HTTP/3 need a CDN in front of Pages (Cloudflare on the free plan works: Transform Rules for headers, Cache Rules for immutable assets).
 
 The canonical production origin is currently `https://denisnadey.com`. Update metadata, sitemap, robots, and hosting redirects together if the domain changes. Production should enforce HTTPS and one canonical host (`www` or apex) at the hosting layer.
 

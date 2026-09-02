@@ -299,4 +299,7 @@ pre,code { text-align:left; }
   .proof-grid { grid-template-columns:1fr; }
   .proof-grid article,.proof-grid article:last-child:nth-child(odd) { grid-column:auto; border-inline-end:0; padding-inline-start:0; }
 }
+.final-cta .section-label { color:var(--blue-contrast); border-bottom-color:color-mix(in srgb, var(--blue-contrast) 35%, transparent); }
+.not-found-languages { display:flex; flex-wrap:wrap; gap:12px 22px; margin:28px 0 36px; font-size:15px; }
+.not-found-languages a { color:var(--blue); text-decoration:underline; text-underline-offset:3px; }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }

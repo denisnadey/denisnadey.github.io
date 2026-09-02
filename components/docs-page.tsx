@@ -1,9 +1,10 @@
 import { getDocsCopy } from "@/content/docs";
-import type { Locale } from "@/content";
+import { getCopy, type Locale } from "@/content";
 import { ExternalLink, FinalCta, PageIntro } from "./site-shell";
 
 export function DocsPage({ locale }: { locale: Locale }) {
   const docs = getDocsCopy(locale);
+  const external = getCopy(locale).common.external;
   return <>
     <PageIntro label={docs.navLabel} title={docs.title} intro={docs.intro} />
     <nav className="docs-index" aria-label={docs.navLabel}>
@@ -27,7 +28,7 @@ export function DocsPage({ locale }: { locale: Locale }) {
         </div>
         <section className="api-map"><p className="section-label">{docs.labels.api}</p><dl>{pkg.api.map((symbol, apiIndex) => <div key={symbol}><dt><code>{symbol}</code></dt><dd>{pkg.apiDescriptions[apiIndex]}</dd></div>)}</dl></section>
         <section className="doc-limits"><p className="section-label">{docs.labels.limits}</p><ul>{pkg.limits.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <footer className="doc-actions"><ExternalLink className="button primary" href={pkg.pubUrl}>{docs.labels.pub}<span aria-hidden="true">↗</span></ExternalLink><ExternalLink className="button line" href={pkg.sourceUrl}>{docs.labels.source}<span aria-hidden="true">↗</span></ExternalLink></footer>
+        <footer className="doc-actions"><ExternalLink label={external} className="button primary" href={pkg.pubUrl}>{docs.labels.pub}<span aria-hidden="true">↗</span></ExternalLink><ExternalLink label={external} className="button line" href={pkg.sourceUrl}>{docs.labels.source}<span aria-hidden="true">↗</span></ExternalLink></footer>
       </article>)}
     </div>
     <FinalCta locale={locale} />

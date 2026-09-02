@@ -45,6 +45,7 @@ export type SiteCopy = {
     selectedEvidence: string;
     discuss: string;
     exploreWork: string;
+    viewExperience: string;
     downloadCv: string;
     viewOpenSource: string;
     viewServices: string;

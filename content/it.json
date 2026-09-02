@@ -14,7 +14,7 @@
       "description": "La storia ingegneristica dietro full_svg_flutter, un runtime autonomo per SVG statici e animati in Flutter."
     },
     "services": {
-      "title": "Servizi di ingegneria web, mobile e AI",
+      "title": "Servizi di ingegneria Flutter, web e AI",
       "description": "Product engineering di livello senior su web, Flutter, sistemi di delivery, architettura e workflow AI applicati."
     },
     "experience": {
@@ -50,6 +50,7 @@
     "selectedEvidence": "Risultati selezionati · CV aggiornato",
     "discuss": "Parliamo del progetto",
     "exploreWork": "Guarda i progetti selezionati",
+    "viewExperience": "Vedi tutta l'esperienza",
     "downloadCv": "Scarica il CV",
     "viewOpenSource": "Scopri l'open source",
     "viewServices": "Scopri i servizi",

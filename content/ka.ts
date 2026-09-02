@@ -3,10 +3,10 @@ import type { SiteCopy } from "./types";
 export const ka: SiteCopy = {
   localeName: "ქართული",
   seo: {
-    home: { title: "Engineering Manager · Web, Mobile და AI", description: "დენის ნადეის 11+ წლიანი გამოცდილება მოიცავს ვებპროდუქტების ინჟინერიას, მობილურ პლატფორმებს, საინჟინრო გუნდების ხელმძღვანელობას, open source-სა და AI-ით გაძლიერებულ მიწოდებას." },
+    home: { title: "Engineering Manager · Web, Mobile და AI", description: "დენის ნადეი: 11+ წელი ვებპროდუქტებში, მობილურ პლატფორმებში, საინჟინრო გუნდების ხელმძღვანელობაში, open source-სა და AI-ით გაძლიერებულ მიწოდებაში." },
     work: { title: "პროექტები · Web, Mobile და საინჟინრო ხელმძღვანელობა", description: "დენის ნადეის შერჩეული პროექტები: ვებპროდუქტები, მობილური პლატფორმები, მიწოდების სისტემები, fintech და open source." },
     "open-source": { title: "full_svg_flutter · Open source", description: "full_svg_flutter-ის საინჟინრო ისტორია — სტატიკური და ანიმირებული SVG-ის დამოუკიდებელი runtime Flutter-ისთვის." },
-    services: { title: "Web, Mobile და AI საინჟინრო სერვისები", description: "სენიორ დონის პროდუქტული ინჟინერია: ვები, Flutter, მიწოდების სისტემები, არქიტექტურა და პრაქტიკული AI სამუშაო პროცესები." },
+    services: { title: "Flutter, Web და AI საინჟინრო სერვისები", description: "სენიორ დონის პროდუქტული ინჟინერია: ვები, Flutter, მიწოდების სისტემები, არქიტექტურა და პრაქტიკული AI სამუშაო პროცესები." },
     experience: { title: "საინჟინრო ხელმძღვანელობის გამოცდილება", description: "კარიერული გზა პრაქტიკული პროგრამული ინჟინერიიდან რამდენიმე მობილური გუნდის ხელმძღვანელობამდე." },
     about: { title: "დენის ნადეის შესახებ · Web, Mobile და AI", description: "Engineering Manager და hands-on პროდუქტული ინჟინერი — ვების საფუძველი, მობილური პლატფორმების ღრმა გამოცდილება და AI-ზე აგებული მიწოდების პრაქტიკა." },
     contact: { title: "დაუკავშირდით დენის ნადეის · Web, Mobile და AI", description: "განიხილეთ დენის ნადეისთან ვებ- ან მობილური პროდუქტი, საინჟინრო ხელმძღვანელობის გამოწვევა, მიწოდების სისტემა ან პრაქტიკული AI სამუშაო პროცესი." },
@@ -17,7 +17,7 @@ export const ka: SiteCopy = {
     location: "თბილისი, საქართველო",
     availability: "რელოკაცია ევროპაში / დისტანციურად",
     menu: "მენიუ", language: "ენა", close: "დახურვა", skip: "შინაარსზე გადასვლა",
-    selectedEvidence: "შერჩეული ფაქტები · მიმდინარე CV", discuss: "პროექტის განხილვა", exploreWork: "შერჩეული პროექტების ნახვა", downloadCv: "CV-ის ჩამოტვირთვა",
+    selectedEvidence: "შერჩეული ფაქტები · მიმდინარე CV", discuss: "პროექტის განხილვა", exploreWork: "შერჩეული პროექტების ნახვა", viewExperience: "სრული გამოცდილების ნახვა", downloadCv: "CV-ის ჩამოტვირთვა",
     viewOpenSource: "Open source-ის ნახვა", viewServices: "სერვისების ნახვა", readArticle: "ტექნიკური ანალიზის წაკითხვა", visitGithub: "GitHub-ზე ნახვა", visitPub: "pub.dev-ზე ნახვა",
     finalTitle: "გჭირდებათ ციფრული პროდუქტის შექმნა, მოდერნიზაცია ან ჩიხიდან გამოყვანა?", finalBody: "მოგვიყევით რეალურ პრობლემაზე — ვები, მობილური, გუნდის მიწოდება თუ AI სამუშაო პროცესი, რომელიც პროდაქშენისთვის ვარგისი უნდა გახდეს.",
     contactDenis: "დენისთან დაკავშირება", external: "იხსნება ახალ ჩანართში", current: "მიმდინარე გვერდი",

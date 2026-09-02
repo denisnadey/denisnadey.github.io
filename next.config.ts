@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // GitHub Pages serves directory indexes as `/en/`; keep every generated URL, canonical, and link in that form.
+  trailingSlash: true,
   async headers() {
     return [
       {

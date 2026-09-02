@@ -23,6 +23,7 @@ export const en: SiteCopy = {
     selectedEvidence: "Selected evidence · current CV",
     discuss: "Discuss a project",
     exploreWork: "Explore selected work",
+    viewExperience: "View full experience",
     downloadCv: "Download CV",
     viewOpenSource: "View open source",
     viewServices: "View services",

@@ -12,13 +12,30 @@ const env = { ASSETS: { fetch: async () => new Response("Not found", { status: 4
 const ctx = { waitUntil() {}, passThroughOnException() {} };
 const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"];
 const pages = ["work", "open-source", "services", "experience", "about", "contact"];
+const siteUrl = "https://denisnadey.com";
+
+// vinext streams metadata into <body> for browsers and renders it blocking inside <head> for HTML-limited bots.
+// The static export must carry the <head> variant, because that is what search engines and link previews read.
+const exportUserAgent = "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) denisnadey-static-export";
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(join(root, "dist/client"), output, { recursive: true });
 
 async function request(path, accept = "text/html") {
-  return worker.fetch(new Request(`https://denisnadey.com${path}`, { headers: { accept } }), env, ctx);
+  return worker.fetch(new Request(`${siteUrl}${path}`, { headers: { accept, "user-agent": exportUserAgent } }), env, ctx);
+}
+
+function assertHeadMetadata(path, source) {
+  const html = source.toLowerCase();
+  const headEnd = html.indexOf("</head>");
+  const required = ['<link rel="canonical"', '<meta name="description"', 'hreflang="x-default"', '<meta property="og:image"', '<link rel="icon"'];
+  for (const marker of required) {
+    const at = html.indexOf(marker);
+    if (at === -1 || at > headEnd) throw new Error(`${path}: ${marker} is missing from <head>; static export would ship metadata search engines ignore`);
+  }
+  const bareLink = html.match(/href="\/[a-z]{2}(?:\/[a-z-]+)?"/);
+  if (bareLink) throw new Error(`${path}: internal link without trailing slash: ${bareLink[0]}`);
 }
 
 async function writeResponse(path, destination, expectedStatus = 200) {
@@ -26,28 +43,30 @@ async function writeResponse(path, destination, expectedStatus = 200) {
   if (response.status !== expectedStatus) {
     throw new Error(`${path} returned ${response.status}; expected ${expectedStatus}`);
   }
+  const body = Buffer.from(await response.arrayBuffer());
+  if (expectedStatus === 200 && destination.endsWith(".html")) assertHeadMetadata(path, body.toString("utf8"));
   const target = join(output, destination);
   await mkdir(dirname(target), { recursive: true });
-  await writeFile(target, Buffer.from(await response.arrayBuffer()));
+  await writeFile(target, body);
 }
 
 for (const locale of locales) {
-  await writeResponse(`/${locale}`, `${locale}/index.html`);
-  await writeResponse(`/${locale}/docs`, `${locale}/docs/index.html`);
+  await writeResponse(`/${locale}/`, `${locale}/index.html`);
+  await writeResponse(`/${locale}/docs/`, `${locale}/docs/index.html`);
   for (const page of pages) {
-    await writeResponse(`/${locale}/${page}`, `${locale}/${page}/index.html`);
+    await writeResponse(`/${locale}/${page}/`, `${locale}/${page}/index.html`);
   }
 }
 
 await writeResponse("/robots.txt", "robots.txt");
 await writeResponse("/sitemap.xml", "sitemap.xml");
 await writeResponse("/manifest.webmanifest", "manifest.webmanifest");
-await writeResponse("/en/does-not-exist", "404.html", 404);
+await writeResponse("/en/does-not-exist/", "404.html", 404);
 
 await writeFile(join(output, ".nojekyll"), "");
 await writeFile(
   join(output, "index.html"),
-  '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/en/"><link rel="canonical" href="https://denisnadey.com/en"><title>Denis Nadey</title><script>location.replace("/en/"+location.search+location.hash)</script></head><body><a href="/en/">Continue to the website</a></body></html>\n',
+  `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/en/"><meta name="description" content="Denis Nadey — Engineering Manager and hands-on web, mobile, and AI product engineer. Continue to the English site or pick another language."><link rel="canonical" href="${siteUrl}/en/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Denis Nadey</title><script>location.replace("/en/"+location.search+location.hash)</script></head><body><p><a href="/en/">Continue to the website</a></p><p>${locales.map((locale) => `<a href="/${locale}/" hreflang="${locale}">${locale}</a>`).join(" · ")}</p></body></html>\n`,
 );
 
 console.log(`Exported ${locales.length * (pages.length + 2)} pages to ${output}`);
