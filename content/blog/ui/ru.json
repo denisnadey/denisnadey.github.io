@@ -1,0 +1,21 @@
+{
+  "navLabel": "Блог",
+  "title": "Заметки из практики: Flutter, open source и команды.",
+  "intro": "Статьи, заметки о релизах пакетов и посты Дениса Надея о Flutter, анимированном SVG, open-source рантаймах и руководстве разработкой. Посты, которые впервые вышли в LinkedIn, ссылаются на оригинал.",
+  "seoTitle": "Блог: Flutter, open source и руководство разработкой",
+  "description": "Статьи, заметки о релизах и посты Дениса Надея о Flutter, анимированном SVG, open-source пакетах и руководстве разработкой — на десяти языках.",
+  "kinds": {
+    "article": "Статья",
+    "post": "Пост"
+  },
+  "readingTime": "{minutes} мин чтения",
+  "originallyPublished": "Впервые опубликовано в LinkedIn",
+  "readOriginal": "Читать в LinkedIn",
+  "translatedFrom": "Перевод с английского",
+  "allPosts": "Все записи",
+  "tagsLabel": "Темы",
+  "latestLabel": "Публикации",
+  "latestTitle": "Свежее в блоге.",
+  "latestIntro": "Заметки о релизах пакетов, идеи, которые за ними стоят, и посты о том, как строить Flutter-продукты и команды.",
+  "viewAll": "Читать блог"
+}

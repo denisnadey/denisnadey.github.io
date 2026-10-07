@@ -172,10 +172,10 @@
   "openSource": {
     "title": "Mentalidad de motor de navegador, aplicada al SVG en Flutter.",
     "intro": "Denis creó y mantiene full_svg_flutter, un runtime de renderizado autónomo para equipos que necesitan que sus SVG existentes sigan siendo SVG dentro de Flutter.",
-    "versionLabel": "Cifras públicas · 17 ago 2026",
+    "versionLabel": "Cifras públicas · 7 oct 2026",
     "proof": [
       {
-        "value": "1.4.2",
+        "value": "1.5.2",
         "label": "release actual"
       },
       {
@@ -183,7 +183,7 @@
         "label": "pub points"
       },
       {
-        "value": "12",
+        "value": "17",
         "label": "versiones públicas"
       },
       {

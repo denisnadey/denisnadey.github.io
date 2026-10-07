@@ -124,11 +124,11 @@ export const de: SiteCopy = {
   openSource: {
     title: "Browser-Engine-Denken für SVG in Flutter.",
     intro: "Denis hat full_svg_flutter entwickelt und pflegt es weiter: eine eigenständige Rendering-Runtime für Teams, deren vorhandene SVG-Assets in Flutter SVG bleiben müssen.",
-    versionLabel: "Öffentlicher Stand · 17. August 2026",
+    versionLabel: "Öffentlicher Stand · 7. Oktober 2026",
     proof: [
-      { value: "1.4.2", label: "aktuelle Version" },
+      { value: "1.5.2", label: "aktuelle Version" },
       { value: "140", label: "pub points" },
-      { value: "12", label: "öffentliche Versionen" },
+      { value: "17", label: "öffentliche Versionen" },
       { value: "MIT", label: "Open-Source-Lizenz" },
     ],
     problemTitle: "Im Browser funktioniert das Asset. In Flutter verschwindet die Animation.",

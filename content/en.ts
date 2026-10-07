@@ -124,11 +124,11 @@ export const en: SiteCopy = {
   openSource: {
     title: "A browser-engine mindset, brought to Flutter SVG.",
     intro: "Denis created and maintains full_svg_flutter, a self-contained rendering runtime for teams that need existing SVG assets to remain SVG inside Flutter.",
-    versionLabel: "Public snapshot · 17 Aug 2026",
+    versionLabel: "Public snapshot · 7 Oct 2026",
     proof: [
-      { value: "1.4.2", label: "current release" },
+      { value: "1.5.2", label: "current release" },
       { value: "140", label: "pub points" },
-      { value: "12", label: "public versions" },
+      { value: "17", label: "public versions" },
       { value: "MIT", label: "open-source license" },
     ],
     problemTitle: "The asset works in a browser. In Flutter, the animation disappears.",

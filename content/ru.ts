@@ -124,11 +124,11 @@ export const ru: SiteCopy = {
   openSource: {
     title: "Подход браузерного движка — к SVG во Flutter.",
     intro: "Денис создал и поддерживает full_svg_flutter — самостоятельный рендерер для команд, которым важно оставить существующие SVG-ассеты в исходном формате внутри Flutter.",
-    versionLabel: "Публичный срез · 17 августа 2026",
+    versionLabel: "Публичный срез · 7 октября 2026",
     proof: [
-      { value: "1.4.2", label: "текущий релиз" },
+      { value: "1.5.2", label: "текущий релиз" },
       { value: "140", label: "pub points" },
-      { value: "12", label: "публичных версий" },
+      { value: "17", label: "публичных версий" },
       { value: "MIT", label: "лицензия" },
     ],
     problemTitle: "В браузере ассет работает. Во Flutter анимация пропадает.",

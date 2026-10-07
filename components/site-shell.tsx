@@ -1,42 +1,49 @@
 import { getCopy, locales, type Locale, type PageSlug } from "@/content";
+import { getBlogCopy } from "@/content/blog";
 import { getDocsCopy } from "@/content/docs";
 import { getPositioning } from "@/content/positioning";
 import { links, routePath, siteName } from "@/content/shared";
 import { ThemeToggle } from "./theme-toggle";
 
-type HeaderPage = PageSlug | "home" | "docs";
-const navPages: Array<PageSlug | "docs"> = ["work", "services", "open-source", "docs", "experience", "about"];
+type NavSlug = PageSlug | "docs" | "blog";
+type HeaderPage = NavSlug | "home" | `blog/${string}`;
+const navPages: NavSlug[] = ["work", "services", "open-source", "docs", "blog", "experience", "about"];
 
 export function ExternalLink({ href, children, className, label }: { href: string; children: React.ReactNode; className?: string; label?: string }) {
   return <a className={className} href={href} target="_blank" rel="noreferrer">{children}<span className="sr-only"> ({label ?? getCopy("en").common.external})</span></a>;
 }
 
-export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: HeaderPage }) {
+/** `available` lists the locales that have this page; the language menu sends the others to their blog index. */
+export function SiteHeader({ locale, page = "home", available = locales }: { locale: Locale; page?: HeaderPage; available?: readonly Locale[] }) {
   const copy = getCopy(locale);
   const docs = getDocsCopy(locale);
+  const blog = getBlogCopy(locale);
   const position = getPositioning(locale);
-  const label = (slug: PageSlug | "docs" | "home") => (slug === "docs" ? docs.navLabel : copy.nav[slug]);
+  const label = (slug: NavSlug | "home") => (slug === "docs" ? docs.navLabel : slug === "blog" ? blog.navLabel : copy.nav[slug]);
+  // A blog post is inside the Blog section, but only the index is the current page.
+  const current = (slug: NavSlug | "home") => (page === slug ? "page" : slug === "blog" && page.startsWith("blog/") ? "true" : undefined);
+  const translationHref = (candidate: Locale) => (page === "home" ? routePath(candidate) : available.includes(candidate) ? routePath(candidate, page) : routePath(candidate, "blog"));
   return (
     <header className="site-header">
       <a className="wordmark" href={routePath(locale)}>DN<span>—26</span><span className="sr-only"> · {siteName} · {copy.nav.home}</span></a>
       <nav className="desktop-nav" aria-label={copy.common.menu}>
-        {navPages.map((slug) => <a key={slug} href={routePath(locale, slug)} aria-current={page === slug ? "page" : undefined}>{label(slug)}</a>)}
+        {navPages.map((slug) => <a key={slug} href={routePath(locale, slug)} aria-current={current(slug)}>{label(slug)}</a>)}
       </nav>
       <div className="header-actions">
         <ThemeToggle toDark={position.themeToDark} toLight={position.themeToLight} />
         <details className="language-menu">
           <summary><span className="sr-only">{copy.common.language}: </span>{locale.toUpperCase()}</summary>
           <div className="language-panel">
-            {locales.map((candidate) => <a key={candidate} href={routePath(candidate, page === "home" ? undefined : page)} hrefLang={candidate} lang={candidate} aria-current={candidate === locale ? "page" : undefined}>{getCopy(candidate).localeName}</a>)}
+            {locales.map((candidate) => <a key={candidate} href={translationHref(candidate)} hrefLang={candidate} lang={candidate} aria-current={candidate === locale ? "page" : undefined}>{getCopy(candidate).localeName}</a>)}
           </div>
         </details>
         <a className="header-contact" href={routePath(locale, "contact")}>{copy.common.contactDenis}<span aria-hidden="true">↗</span></a>
         <details className="mobile-menu">
           <summary>{copy.common.menu}</summary>
           <nav aria-label={copy.common.menu}>
-            {(["home", ...navPages, "contact"] as HeaderPage[]).map((slug) => {
+            {(["home", ...navPages, "contact"] as Array<NavSlug | "home">).map((slug) => {
               const href = slug === "home" ? routePath(locale) : routePath(locale, slug);
-              return <a key={slug} href={href} aria-current={page === slug ? "page" : undefined}>{label(slug)}</a>;
+              return <a key={slug} href={href} aria-current={current(slug)}>{label(slug)}</a>;
             })}
           </nav>
         </details>
@@ -48,6 +55,7 @@ export function SiteHeader({ locale, page = "home" }: { locale: Locale; page?: H
 export function SiteFooter({ locale }: { locale: Locale }) {
   const copy = getCopy(locale);
   const docs = getDocsCopy(locale);
+  const blog = getBlogCopy(locale);
   return (
     <footer className="site-footer">
       <div><span className="wordmark">DN<span>—26</span></span><p>{siteName}<br />{copy.common.role}<br />{copy.common.location}</p></div>
@@ -56,6 +64,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
         <a href={routePath(locale, "services")}>{copy.nav.services}</a>
         <a href={routePath(locale, "open-source")}>{copy.nav["open-source"]}</a>
         <a href={routePath(locale, "docs")}>{docs.navLabel}</a>
+        <a href={routePath(locale, "blog")}>{blog.navLabel}</a>
         <a href={routePath(locale, "experience")}>{copy.nav.experience}</a>
         <a href={routePath(locale, "about")}>{copy.nav.about}</a>
         <a href={routePath(locale, "contact")}>{copy.nav.contact}</a>
@@ -82,6 +91,6 @@ export function FinalCta({ locale }: { locale: Locale }) {
   );
 }
 
-export function PageIntro({ label, title, intro }: { label: string; title: string; intro: string }) {
-  return <section className="page-intro"><p className="section-label">{label}</p><h1>{title}</h1><p className="page-lede">{intro}</p></section>;
+export function PageIntro({ label, title, intro, className }: { label: string; title: string; intro: string; className?: string }) {
+  return <section className={className ? `page-intro ${className}` : "page-intro"}><p className="section-label">{label}</p><h1>{title}</h1><p className="page-lede">{intro}</p></section>;
 }

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { checkBlog } from "../scripts/check-blog.mjs";
 
 const docsSource = await readFile(new URL("../content/docs.ts", import.meta.url), "utf8");
 const typedLocaleSources = await Promise.all(["ka", "ar"].map((locale) => readFile(new URL(`../content/${locale}.ts`, import.meta.url), "utf8")));
@@ -27,6 +28,12 @@ test("documentation contains every required locale and package", () => {
   for (const packageName of ["full_svg_flutter", "woff2", "quickjs_engine"]) {
     assert.match(docsSource, new RegExp(packageName), `${packageName} docs missing`);
   }
+});
+
+test("every blog post is translated into every locale with the English structure", async () => {
+  const { errors, slugs } = await checkBlog();
+  assert.ok(slugs.length > 0, "the blog has posts");
+  assert.deepEqual(errors, [], `run \`node scripts/check-blog.mjs\` for details:\n${errors.join("\n")}`);
 });
 
 test("Georgian and Arabic dictionaries contain every public content group", () => {

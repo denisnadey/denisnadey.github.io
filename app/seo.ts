@@ -3,22 +3,34 @@ import { getCopy, locales, type Locale, type PageSlug } from "@/content";
 import { contentUpdatedAt } from "@/content/build-info";
 import { absoluteUrl, brandTitle, links, ogImage, ogLocales, personSameAs, routePath, siteName, siteUrl } from "@/content/shared";
 
-type RouteSegment = PageSlug | "docs" | undefined;
+export type RouteSegment = PageSlug | "docs" | "blog" | `blog/${string}` | undefined;
 
-export function languageAlternates(page?: RouteSegment): Record<string, string> {
-  const languages = Object.fromEntries(locales.map((item) => [item, absoluteUrl(routePath(item, page))]));
-  return { ...languages, "x-default": absoluteUrl(routePath("en", page)) };
+/** hreflang map; `available` narrows it for content that does not exist in every locale. */
+export function languageAlternates(page?: RouteSegment, available: readonly Locale[] = locales): Record<string, string> {
+  const languages = Object.fromEntries(available.map((item) => [item, absoluteUrl(routePath(item, page))]));
+  const fallback = available.includes("en") ? "en" : available[0];
+  return { ...languages, "x-default": absoluteUrl(routePath(fallback, page)) };
 }
 
+type MetadataExtras = {
+  available?: readonly Locale[];
+  /** Blog posts: Open Graph `article:*` dates. */
+  publishedTime?: string;
+  modifiedTime?: string;
+  /** Blog pages advertise the locale's RSS feed. */
+  feed?: string;
+};
+
 /** Shared metadata for every public page: brand in the title, one canonical form, hreflang, Open Graph, and Twitter cards. */
-export function pageMetadata(locale: Locale, page: RouteSegment, meta: { title: string; description: string }, type: "profile" | "website" = "website"): Metadata {
+export function pageMetadata(locale: Locale, page: RouteSegment, meta: { title: string; description: string }, type: "profile" | "website" | "article" = "website", extras: MetadataExtras = {}): Metadata {
   const path = routePath(locale, page);
   const title = brandTitle(meta.title);
+  const article = type === "article" ? { publishedTime: extras.publishedTime, modifiedTime: extras.modifiedTime ?? extras.publishedTime, authors: [absoluteUrl(routePath(locale))] } : {};
   return {
     title,
     description: meta.description,
-    alternates: { canonical: path, languages: languageAlternates(page) },
-    openGraph: { type, title, description: meta.description, url: path, siteName, locale: ogLocales[locale], images: [ogImage] },
+    alternates: { canonical: path, languages: languageAlternates(page, extras.available), ...(extras.feed ? { types: { "application/rss+xml": extras.feed } } : {}) },
+    openGraph: { type, title, description: meta.description, url: path, siteName, locale: ogLocales[locale], images: [ogImage], ...article },
     twitter: { card: "summary_large_image", title, description: meta.description, images: [ogImage] },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   };
@@ -61,15 +73,16 @@ export function websiteSchema() {
   };
 }
 
-export function breadcrumbSchema(locale: Locale, page: PageSlug | "docs", pageName: string) {
+type Crumb = { page: Exclude<RouteSegment, undefined>; name: string };
+
+/** Home → (optional parent) → page. */
+export function breadcrumbSchema(locale: Locale, page: Crumb["page"], pageName: string, parent?: Crumb) {
   const copy = getCopy(locale);
+  const trail = [{ name: copy.nav.home, path: routePath(locale) }, ...(parent ? [{ name: parent.name, path: routePath(locale, parent.page) }] : []), { name: pageName, path: routePath(locale, page) }];
   return {
     "@type": "BreadcrumbList",
     "@id": `${absoluteUrl(routePath(locale, page))}#breadcrumb`,
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: copy.nav.home, item: absoluteUrl(routePath(locale)) },
-      { "@type": "ListItem", position: 2, name: pageName, item: absoluteUrl(routePath(locale, page)) },
-    ],
+    itemListElement: trail.map((crumb, index) => ({ "@type": "ListItem", position: index + 1, name: crumb.name, item: absoluteUrl(crumb.path) })),
   };
 }
 

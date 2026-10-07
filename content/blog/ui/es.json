@@ -1,0 +1,21 @@
+{
+  "navLabel": "Blog",
+  "title": "Notas desde la práctica: Flutter, open source y equipos.",
+  "intro": "Artículos, notas de versión de paquetes y publicaciones de Denis Nadey sobre Flutter, SVG animado, runtimes open source y liderazgo de ingeniería. Los textos publicados primero en LinkedIn enlazan al original.",
+  "seoTitle": "Blog: Flutter, open source y liderazgo de ingeniería",
+  "description": "Artículos, notas de versión y publicaciones de Denis Nadey sobre Flutter, SVG animado, paquetes open source y liderazgo de ingeniería, en diez idiomas.",
+  "kinds": {
+    "article": "Artículo",
+    "post": "Publicación"
+  },
+  "readingTime": "{minutes} min de lectura",
+  "originallyPublished": "Publicado originalmente en LinkedIn",
+  "readOriginal": "Leer en LinkedIn",
+  "translatedFrom": "Traducido del inglés",
+  "allPosts": "Todas las entradas",
+  "tagsLabel": "Temas",
+  "latestLabel": "Artículos",
+  "latestTitle": "Lo último del blog.",
+  "latestIntro": "Notas de versión de los paquetes, las ideas que hay detrás y publicaciones sobre cómo construir productos y equipos Flutter.",
+  "viewAll": "Leer el blog"
+}

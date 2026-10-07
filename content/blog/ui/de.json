@@ -1,0 +1,21 @@
+{
+  "navLabel": "Blog",
+  "title": "Notizen aus der Praxis: Flutter, Open Source und Teams.",
+  "intro": "Artikel, Release Notes zu den Paketen und Beiträge von Denis Nadey über Flutter, animiertes SVG, Open-Source-Runtimes und Engineering-Führung. Was zuerst auf LinkedIn erschienen ist, verlinkt auf das Original.",
+  "seoTitle": "Blog: Flutter, Open Source und Engineering Leadership",
+  "description": "Artikel, Release Notes und Beiträge von Denis Nadey über Flutter, animiertes SVG, Open-Source-Pakete und Engineering-Führung – in zehn Sprachen.",
+  "kinds": {
+    "article": "Artikel",
+    "post": "Beitrag"
+  },
+  "readingTime": "{minutes} Min. Lesezeit",
+  "originallyPublished": "Ursprünglich auf LinkedIn veröffentlicht",
+  "readOriginal": "Auf LinkedIn lesen",
+  "translatedFrom": "Aus dem Englischen übersetzt",
+  "allPosts": "Alle Beiträge",
+  "tagsLabel": "Themen",
+  "latestLabel": "Texte",
+  "latestTitle": "Neues aus dem Blog.",
+  "latestIntro": "Release Notes zu den Paketen, die Gedanken dahinter und Beiträge darüber, wie man Flutter-Produkte und Teams aufbaut.",
+  "viewAll": "Zum Blog"
+}

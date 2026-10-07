@@ -124,11 +124,11 @@ export const fr: SiteCopy = {
   openSource: {
     title: "L'esprit d'un moteur de navigateur, appliqué au SVG dans Flutter.",
     intro: "Denis a créé et maintient full_svg_flutter, un runtime de rendu autonome pour les équipes qui ont besoin que leurs assets SVG existants restent des SVG dans Flutter.",
-    versionLabel: "État public · 17 août 2026",
+    versionLabel: "État public · 7 octobre 2026",
     proof: [
-      { value: "1.4.2", label: "version actuelle" },
+      { value: "1.5.2", label: "version actuelle" },
       { value: "140", label: "pub points" },
-      { value: "12", label: "versions publiques" },
+      { value: "17", label: "versions publiques" },
       { value: "MIT", label: "licence open source" },
     ],
     problemTitle: "L'asset fonctionne dans le navigateur. Dans Flutter, l'animation disparaît.",

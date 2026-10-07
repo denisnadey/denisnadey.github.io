@@ -1,0 +1,21 @@
+{
+  "navLabel": "Blog",
+  "title": "Notatki z dowożenia: Flutter, open source i zespoły.",
+  "intro": "Artykuły, informacje o wydaniach pakietów i posty Denisa Nadeya o Flutterze, animowanych SVG, runtime'ach open source i kierowaniu zespołami inżynierskimi. Wpisy, które zaczęły się na LinkedInie, odsyłają do oryginału.",
+  "seoTitle": "Blog: Flutter, open source i kierowanie zespołami",
+  "description": "Artykuły, informacje o wydaniach i posty Denisa Nadeya o Flutterze, animowanych SVG, pakietach open source i kierowaniu zespołami – w dziesięciu językach.",
+  "kinds": {
+    "article": "Artykuł",
+    "post": "Post"
+  },
+  "readingTime": "{minutes} min czytania",
+  "originallyPublished": "Pierwotnie opublikowano na LinkedInie",
+  "readOriginal": "Przeczytaj na LinkedInie",
+  "translatedFrom": "Tłumaczenie z angielskiego",
+  "allPosts": "Wszystkie wpisy",
+  "tagsLabel": "Tematy",
+  "latestLabel": "Teksty",
+  "latestTitle": "Najnowsze na blogu.",
+  "latestIntro": "Informacje o wydaniach pakietów, idee, które za nimi stoją, i posty o budowaniu produktów Flutter i zespołów.",
+  "viewAll": "Przejdź do bloga"
+}

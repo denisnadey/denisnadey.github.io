@@ -1,0 +1,21 @@
+{
+  "navLabel": "Blog",
+  "title": "Notes from shipping Flutter, open source, and teams.",
+  "intro": "Articles, package release notes, and posts by Denis Nadey on Flutter, animated SVG, open-source runtimes, and engineering leadership. Posts that started on LinkedIn link back to the original.",
+  "seoTitle": "Blog: Flutter, open source, and engineering leadership",
+  "description": "Articles, release notes, and posts by Denis Nadey on Flutter, animated SVG, open-source packages, and engineering leadership, in ten languages.",
+  "kinds": {
+    "article": "Article",
+    "post": "Post"
+  },
+  "readingTime": "{minutes} min read",
+  "originallyPublished": "Originally published on LinkedIn",
+  "readOriginal": "Read on LinkedIn",
+  "translatedFrom": "Translated from English",
+  "allPosts": "All posts",
+  "tagsLabel": "Topics",
+  "latestLabel": "Writing",
+  "latestTitle": "Latest from the blog.",
+  "latestIntro": "Release notes for the packages, the thinking behind them, and posts about building Flutter products and teams.",
+  "viewAll": "Read the blog"
+}

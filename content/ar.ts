@@ -44,8 +44,8 @@ export const ar: SiteCopy = {
     ],
   },
   openSource: {
-    title: "عقلية محرك المتصفح، منقولة إلى SVG في Flutter.", intro: "أنشأ دينيس full_svg_flutter ويواصل صيانته، وهو runtime عرض مستقل للفرق التي تحتاج إلى أن تبقى أصول SVG الموجودة لديها بصيغة SVG داخل Flutter.", versionLabel: "لقطة عامة · 17 أغسطس 2026",
-    proof: [{ value: "1.4.2", label: "الإصدار الحالي" }, { value: "140", label: "pub points" }, { value: "12", label: "إصداراً عاماً" }, { value: "MIT", label: "رخصة مفتوحة المصدر" }],
+    title: "عقلية محرك المتصفح، منقولة إلى SVG في Flutter.", intro: "أنشأ دينيس full_svg_flutter ويواصل صيانته، وهو runtime عرض مستقل للفرق التي تحتاج إلى أن تبقى أصول SVG الموجودة لديها بصيغة SVG داخل Flutter.", versionLabel: "لقطة عامة · 7 أكتوبر 2026",
+    proof: [{ value: "1.5.2", label: "الإصدار الحالي" }, { value: "140", label: "pub points" }, { value: "17", label: "إصداراً عاماً" }, { value: "MIT", label: "رخصة مفتوحة المصدر" }],
     problemTitle: "الأصل يعمل في المتصفح. وفي Flutter تختفي الحركة.", problemBody: "تسدّ pipelines كثيرة هذه الفجوة بتحويل الأصل إلى Lottie أو Rive أو GIF أو WebP أو كود حركة مخصص في Flutter. قد تكون هذه أدوات جيدة، لكن التحويل تكلفة في غير محلها عندما يكون SVG هو مصدر الحقيقة أصلاً.",
     engineTitle: "محرك واحد يحافظ على DOM لملفات SVG الثابتة والمتحركة", engineBody: "تحلّل الحزمة نموذج المستند و CSS والتوقيت والفلاتر والنصوص وحالة التفاعل، ثم ترسم داخل Flutter. تعمل تصديرات SVGator المعتمدة على JavaScript عبر محرك QuickJS مدمج، أما ملفات SVG الخالية من scripts فلا تدفع أي تكلفة لبدء تشغيل JavaScript.",
     coverageTitle: "ما يغطيه الـ runtime", coverage: ["الأشكال الهندسية الثابتة والتدرجات اللونية والأنماط والقص والأقنعة", "حركة SMIL و CSS @keyframes", "path morphing و motion paths والتحكم في التشغيل", "جميع filter primitives في SVG، وعددها 17", "النصوص الغنية و textPath و bidi/RTL وبيانات إمكانية الوصول الوصفية", "JavaScript مضمّن وتصديرات SVGator", "ترحيل API ثابتة متوافقة مع flutter_svg", "Android و iOS و macOS و Windows و Linux"],

@@ -172,10 +172,10 @@
   "openSource": {
     "title": "Myślenie jak silnik przeglądarki, przeniesione do SVG we Flutterze.",
     "intro": "Denis stworzył i rozwija full_svg_flutter – samodzielny runtime renderujący dla zespołów, które potrzebują, by istniejące assety SVG pozostały SVG również we Flutterze.",
-    "versionLabel": "Publiczna wersja · stan na 17 sierpnia 2026",
+    "versionLabel": "Publiczna wersja · stan na 7 października 2026",
     "proof": [
       {
-        "value": "1.4.2",
+        "value": "1.5.2",
         "label": "aktualny release"
       },
       {
@@ -183,7 +183,7 @@
         "label": "pub points"
       },
       {
-        "value": "12",
+        "value": "17",
         "label": "publicznych wersji"
       },
       {

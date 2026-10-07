@@ -172,10 +172,10 @@
   "openSource": {
     "title": "La mentalità di un motore browser, portata negli SVG di Flutter.",
     "intro": "Denis ha creato e mantiene full_svg_flutter, un runtime di rendering autonomo per i team che hanno bisogno che gli asset SVG esistenti restino SVG dentro Flutter.",
-    "versionLabel": "Snapshot pubblico · 17 agosto 2026",
+    "versionLabel": "Snapshot pubblico · 7 ottobre 2026",
     "proof": [
       {
-        "value": "1.4.2",
+        "value": "1.5.2",
         "label": "release corrente"
       },
       {
@@ -183,7 +183,7 @@
         "label": "pub points"
       },
       {
-        "value": "12",
+        "value": "17",
         "label": "versioni pubbliche"
       },
       {

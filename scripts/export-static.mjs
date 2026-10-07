@@ -11,7 +11,6 @@ const { default: worker } = await import(workerUrl.href);
 const env = { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } };
 const ctx = { waitUntil() {}, passThroughOnException() {} };
 const locales = ["en", "ru", "de", "fr", "es", "it", "pl", "pt", "ka", "ar"];
-const pages = ["work", "open-source", "services", "experience", "about", "contact"];
 const siteUrl = "https://denisnadey.com";
 
 // vinext streams metadata into <body> for browsers and renders it blocking inside <head> for HTML-limited bots.
@@ -34,7 +33,7 @@ function assertHeadMetadata(path, source) {
     const at = html.indexOf(marker);
     if (at === -1 || at > headEnd) throw new Error(`${path}: ${marker} is missing from <head>; static export would ship metadata search engines ignore`);
   }
-  const bareLink = html.match(/href="\/[a-z]{2}(?:\/[a-z-]+)?"/);
+  const bareLink = html.match(/href="\/[a-z]{2}(?:\/[a-z0-9-]+)*"/);
   if (bareLink) throw new Error(`${path}: internal link without trailing slash: ${bareLink[0]}`);
 }
 
@@ -50,13 +49,15 @@ async function writeResponse(path, destination, expectedStatus = 200) {
   await writeFile(target, body);
 }
 
-for (const locale of locales) {
-  await writeResponse(`/${locale}/`, `${locale}/index.html`);
-  await writeResponse(`/${locale}/docs/`, `${locale}/docs/index.html`);
-  for (const page of pages) {
-    await writeResponse(`/${locale}/${page}/`, `${locale}/${page}/index.html`);
-  }
+// The sitemap is the list of public pages, so every page it advertises is exported and nothing else.
+const sitemap = await (await request("/sitemap.xml", "*/*")).text();
+const pagePaths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]).pathname);
+if (!pagePaths.length) throw new Error("sitemap.xml lists no pages");
+for (const path of pagePaths) {
+  if (!path.endsWith("/")) throw new Error(`${path}: sitemap URL without a trailing slash`);
+  await writeResponse(path, `${path.slice(1)}index.html`);
 }
+for (const locale of locales) await writeResponse(`/${locale}/blog/feed.xml`, `${locale}/blog/feed.xml`);
 
 await writeResponse("/robots.txt", "robots.txt");
 await writeResponse("/sitemap.xml", "sitemap.xml");
@@ -69,4 +70,4 @@ await writeFile(
   `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/en/"><meta name="description" content="Denis Nadey — Engineering Manager and hands-on web, mobile, and AI product engineer. Continue to the English site or pick another language."><link rel="canonical" href="${siteUrl}/en/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Denis Nadey</title><script>location.replace("/en/"+location.search+location.hash)</script></head><body><p><a href="/en/">Continue to the website</a></p><p>${locales.map((locale) => `<a href="/${locale}/" hreflang="${locale}">${locale}</a>`).join(" · ")}</p></body></html>\n`,
 );
 
-console.log(`Exported ${locales.length * (pages.length + 2)} pages to ${output}`);
+console.log(`Exported ${pagePaths.length} pages and ${locales.length} feeds to ${output}`);

@@ -1,0 +1,21 @@
+{
+  "navLabel": "Blog",
+  "title": "Notes de terrain : Flutter en production, open source et équipes.",
+  "intro": "Articles, notes de version des packages et posts de Denis Nadey sur Flutter, le SVG animé, les runtimes open source et le management d’ingénierie. Les posts publiés d’abord sur LinkedIn renvoient vers l’original.",
+  "seoTitle": "Blog : Flutter, open source et management d’ingénierie",
+  "description": "Articles, notes de version et posts de Denis Nadey sur Flutter, le SVG animé, les packages open source et le management d’ingénierie, en dix langues.",
+  "kinds": {
+    "article": "Article",
+    "post": "Post"
+  },
+  "readingTime": "{minutes} min de lecture",
+  "originallyPublished": "Publié à l’origine sur LinkedIn",
+  "readOriginal": "Lire sur LinkedIn",
+  "translatedFrom": "Traduit de l’anglais",
+  "allPosts": "Toutes les publications",
+  "tagsLabel": "Thèmes",
+  "latestLabel": "Publications",
+  "latestTitle": "Récemment sur le blog.",
+  "latestIntro": "Les notes de version des packages, les idées qui les sous-tendent et des posts sur la construction de produits et d’équipes Flutter.",
+  "viewAll": "Lire le blog"
+}
